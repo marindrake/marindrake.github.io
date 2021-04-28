@@ -1,9 +1,7 @@
 const links = [
-    {
-      label: "Week1 notes",
-      url: "week1/index.html"
-    }
-  ]
+  { label: 'Week 1 Notes', url: 'week1/index.html', }, // you can add other tags if you like
+  { label: 'Week 2 Notes', url: 'week2/index.html', },
+  ];
 
   var list = document.getElementsByTagName('ol');
 
