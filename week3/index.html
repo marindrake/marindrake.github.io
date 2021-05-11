@@ -14,13 +14,13 @@
                 <h3>Questions:</h3>
                 <ol>
                     <li>
-                        Why would you need to use a template literal in JavaScript?
+                        Where does an arrow function used as a class method store context?
                     </li>
                     <li>
-                        How do you group an array in JavaScript?
+                        What is the purpose of ‘This’ operator in JavaScript?
                     </li>
                     <li>
-                        Are callbacks Asynchronous?
+                        What can a Java Script do with Document Object Model?
                     </li>
                 </ol>
 
@@ -28,108 +28,104 @@
 
                 <ol>
                     <li>
-                        <b>Variables</b>
-                        are used in programming languages to refer to a value stored in memory.
+                        Functions that are stored in object properties are called
+                        <b>“methods”</b>.
                     </li>
                     <li>
-                        <b>Scope</b>
-                        is an important concept in programming. It refers to where a constant or variable is accessible by the program. There are two common scopes that are often referred to in programs: global scope and local scope..
+                        Methods allow objects to
+                        <b>“act”</b>
+                        like object.doSomething().
                     </li>
                     <li>
-                        <b>Converting</b>
-                        <ol>
-                            Converting Between Strings and Numbers.
-                        </ol>
-                        <ol>
-                            Converting Strings to Numbers.
-                        </ol>
-                        <ol>
-                            Converting Numbers to Strings.
-                        </ol>
+                        Methods can reference the object as <b>this</b>.
+                    </li>
+                    <p>The value of <b>this</b> is defined at run-time.</p>
+                    <li>
+                        When a function is declared, it may use <b>this</b>, but that <b>this</b> has no value until the function is called.
                     </li>
                     <li>
-                        <b>Parsing Numbers.</b>
-                        There is also a useful function called parseInt() that can be used to convert a string representation of a numerical value back into a number. You can specify the base of the number you are trying to convert.
+                        A function can be copied between objects.
                     </li>
                     <li>
-                        <b>Template literals</b>
-                        can be thought of as super-powered strings as they behave in the same way as normal string literals, but with the extra power of string interpolation.
+                        When a function is called in the <b>“method”</b> syntax: object.method(), the value of <b>this</b> during the call is <b>object</b>.
                     </li>
                 </ol>
                 <h3>Ch5: Objects</h3>
                 <ol>
                     <li>
-                        Arrays are an ordered list of values.
+                        Objects are a collection of key-value pairs placed inside curly braces {}.
                     </li>
                     <li>
-                        Multidimensional arrays are arrays that contain other arrays.
+                        Objects have properties that can be any JavaScript value. If it’s a function, it’s known as amethod.
                     </li>
                     <li>
-                        Arrays have lots of methods that can be used to manipulate items in the array.
+                        An object’s properties and methods can be accessed using either dot notation or square bracket notation.
                     </li>
                     <li>
-                        Sets are new in ES6 and are ordered lists of non-duplicate value.
+                        Objects are mutable, which means their properties and methods can be changed or removed.
                     </li>
                     <li>
-                        Maps are new in ES6 and are ordered lists of key-value pairs.
+                        Objects can be used as parameters to functions, which allows arguments to be entered in any order, or omitted.
                     </li>
                     <li>
-                        We can use an if and else statement to control the flow of code.
+                        Nested objects can be created by placing objects inside objects.
                     </li>
                     <li>
-                        The switch statement can be used instead of multiple if and else statements.
+                        JSON is a portable data format that uses JavaScript object literals to exchange information.
                     </li>
                     <li>
-                        A while loop and do ... while loop can be used to repeat a block of code while a condition is still true.
+                        The Math object gives access to a number of mathematical constants.
                     </li>
                     <li>
-                        A for loop works in a similar way to a while loop, but has a different syntax.
+                        The Math object can be used to perform mathematical calculations.
                     </li>
                     <li>
-                        A for-of loop can be used to iterate over an array.
+                        The Date object can be used to create date objects.
                     </li>
                     <li>
-                        Sets and maps are enumerable, so can also be looped over using a for-of loop.
+                        Once you’ve created a Date object, you can use the getter methods to access information about that date.
                     </li>
+                    <li>
+                    Once you’ve created a Date object, setter methods can be used to change information about that date.
+                    </li>
+                <li>
+                    The Regex object can be used to create regular expressions.
+                    </li>
+
                 </ol>
                 <h3>Ch6: Document Object Model</h3>
                 <ol>
                     <li>
-                        Functions are first-class objects that behave the same way as other values.
+                        The Document Object Model is a way of representing a page of HTML as a tree of nodes.
                     </li>
                     <li>
-                        Function literals can be defined using the function declaration, or by creating afunction expressionby assigning an anonymous function to a variable.
+                        The document.getElementById() , document.getElementsByClassName() , document.getElementsByTagNames() and document.querySelector() can be used to access elements on a page.
                     </li>
                     <li>
-                        All functions return a value. If this is not explicitly stated, the function will return undefined.
+                        The parentNode() , previousSibling() , nextSibling() , childNodes() and children() methods can be used to navigate around the DOM tree.
                     </li>
                     <li>
-                        A parameter is a value that is written in the parentheses of a function declaration and can be used like a variable inside the function’s body.
+                        An element’s attributes can be accessed using the getAttribute() method, and updated using the setAttribute() method.
                     </li>
                     <li>
-                        An argument is a value that is provided to a function when it is invoked.
+                        The createElement() and createTextNode() methods can be used to create dynamic markup on the fly.
                     </li>
                     <li>
-                        The arguments variable is an array-like object that allows access to each argument provided to the function using index notation.
+                        Markup can be added to the page using the appendChild() and insertBefore() methods.
                     </li>
                     <li>
-                        The rest operator can be used to access multiple arguments as an array.
+                        Elements can be replaced using the replaceChild() method, and removed using the removeChild() method.
                     </li>
                     <li>
-                        Default arguments can be supplied to a function by assigning them to the parameters.
+                        The innerHTML property can be used to insert raw HTML directly into the DOM.
                     </li>
                     <li>
-                        Arrow functions are a new shorthand notation that can used for writing anonymous functions in ES6.
+                        The CSS properties of an element can be changed by accessing the style property.
                     </li>
                     <li>
                         Function declarations can be invoked before they are defined because they are hoisted to the top of the scope, but function expressions cannot be invoked until after they are defined.
                     </li>
                 </ol>
-                <h3>Ch7: Events</h3>
-              <h2>
-                  Code example - Bean counting.
-              </h2>
-              <img src="/images/bean.jpg" class="photo" alt="My picture"/>
             </li>
         </ul>
     </body>
