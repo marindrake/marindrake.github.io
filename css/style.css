@@ -6,9 +6,10 @@
     }
 
     body {
+        width: 980px;
         font-size: 18px;
         line-height: 1.5;
-        margin: 3em;
+        margin: 0 auto;
     }
 
     .photo {
@@ -49,7 +50,7 @@
     }
 
     #byulink {
-        color: white;
+        color: yellow;
         text-decoration: underline;
     }
 
