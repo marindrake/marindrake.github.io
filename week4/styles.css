@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Da|Roboto');
 body {
-    margin: 50px;
+    margin: 0 auto;
     font-size: 18px;
 }
 
@@ -81,27 +81,46 @@ table {
     height: 100px;
     width: 100px;
 }
+  
+.quiz-body{
+  background: rgba(255,255,255,1);
+  padding: 10px 20px 50px 20px;
+  -webkit-box-shadow: 4px 4px 11px 3px rgba(0,0,0,0.3);
+-moz-box-shadow: 4px 4px 11px 3px rgba(0,0,0,0.3);
+box-shadow: 4px 4px 11px 3px rgba(0,0,0,0.3);
+}
+h1{
+  font-weight: 900;
+  text-align: center;
+  font-size: 48px;
+  margin: 0;
+}
+button {
+  color: #ffffff;
+  background-color: black;
+  border-color: #130269;
+  border-radius: 4px;
+  margin: 0.2em 0;
+  display: block;
+  width: 100%;
+  font-size: 24px;
+}
+#question {
+ font-size: 24px;
+}
 
-body{
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  #question {
-   font-size: 24px;
-  }
-  
-  #result{
-    color: #fff;
-    margin: 0.2em 0;
-    width: 100%;
-    text-align: center;
-  }
-  .correct {
-      background-color: #0c0;
-  }
-  .wrong {
-    color: #fff;
-    background-color: #c00;
-  }
-  
+#result{
+  color: #fff;
+  margin: 0.2em 0;
+  width: 100%;
+  text-align: center;
+}
+.correct {
+    background-color: #0c0;
+}
+.wrong {
+  color: #fff;
+  background-color: #c00;
+}
 
+  
