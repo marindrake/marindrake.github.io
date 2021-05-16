@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Da|Roboto');
 body {
     margin: 50px;
     font-size: 18px;
@@ -80,3 +81,27 @@ table {
     height: 100px;
     width: 100px;
 }
+
+body{
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  #question {
+   font-size: 24px;
+  }
+  
+  #result{
+    color: #fff;
+    margin: 0.2em 0;
+    width: 100%;
+    text-align: center;
+  }
+  .correct {
+      background-color: #0c0;
+  }
+  .wrong {
+    color: #fff;
+    background-color: #c00;
+  }
+  
+
