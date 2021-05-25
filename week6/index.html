@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Challenge One: Todo</title>
+        <meta name="description" content="Portfolio"/>
+        <meta name="author" content="MARINDRAKE"/>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <main>
+            <h1>To-Do List</h1>
+            <ul id="todo">
+              <!-- to do list will appear here -->
+            </ul>
+            <footer>
+                  <div class="bottom-label" id="task-counter">
+                  </div>
+                  <div class="bottom-tab selected-tab" id="filter-all">
+                      <p>ALL</p>
+                  </div>
+                  <div class="bottom-tab" id="filter-active">
+                      <p>ACTIVE</p>
+                  </div>
+                  <div class="bottom-tab" id="filter-completed">
+                      <p>COMPLETED</p>
+                  </div>
+            </footer>
+          </main>
+      
+          <footer class="footer-add">
+              <input type="text" id="new_task" placeholder="Add a New Task">
+              <button id="addnew">ADD</button>
+          </footer>
+          <script src="main.js" type="module"></script>
+    </body>
+</html>
