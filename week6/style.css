@@ -1,144 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-
 * {
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-html{
-    overflow-y: scroll;
-    height: 100%;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-}
+
 body {
-    height: 100%;
-    margin: 0;
-    padding: 0 .3em;
+  width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  background: rgb(208, 208, 228);
+  font-family: sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #73E831;
+}
+
+.menu{
     display: flex;
-    flex-direction: column;
-    background-color: #2E1760; /* midnight blue */
 }
-main {
-    flex: 1 0 auto;
-    width: 100%;
-    max-width: 500px;
-    margin: 1em auto 0 auto;
-    background-color: #7180B9; /* Glaucous */
-    border-radius: 10px 10px 0 0;
-    border: 2px solid #DFF3E4; /* Honeydew */
-    border-bottom: none;
-    padding:.5em;
-    color: #DFF3E4; /* Honeydew */
-}
-h1 {
-    text-align: center;
-}
+
 ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+  list-style-type: none;
+}
+
+body {
+  min-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 3rem;
+}
+main ul li{
     background-color: white;
-    border: 1px solid #2E1760; /* midnight blue */
-    border-top: none;
-    color: #2E1760; /* midnight blue */
+    border-color: white;
+    border-style: solid;
+    margin:5px;
+    border-radius: 5px;
 }
-li {
-    width: 100%;
-    margin: 0;
-    padding: .5em;
-    border-top: 1px solid #2E1760; /* midnight blue */
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-between;
+#counter{
+    color:white;
+    font-size:1.5em;
+    margin: auto;
 }
-li:hover {
-    background-color: #DFF3E4; /* Honeydew */
-}
-label {
-    width: 100%;
-    height: 100%;
-}
-input[type=checkbox] {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 3px;
-    border: 1px solid #2E1760; /* midnight blue */
-    flex-shrink: 0;
-    margin-right: 1rem;
-}
+
+
 button {
-    border-radius: 3px;
-    height: 100%;
-    width: 5em;
-    background-color: #DFF3E4; /* Honeydew */
-    color: #2E1760; /* midnight blue */
-    flex-shrink: 0;
+  background-color: #a9c79d;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 7px;
+  font-size: 1.4em;
 }
+
+#todo{
+    display: inline;
+}
+#todo li{
+  display: flex;
+  align-items:center;   
+}
+
 .remove {
-    font-weight: bold;
-    font-size: 2em;
-    color:#2E1760; /* midnight blue */
-    flex-shrink: 0;
+  font-weight: bold;
+  font-size: 2em;
+  color: blue; /* midnight blue */
+  flex-shrink: 0;
+  margin-left: auto;
+  padding-right:1rem;
 }
 .remove:hover {
-    color: #7180B9; /* Glaucous */
-    cursor: pointer;
+  color: red; /* Glaucous */
+  cursor: pointer;
 }
-.completed label{
-    color: #7180B9; /* Glaucous */
-    text-decoration: line-through;
+input{
+  border-radius: 5px;
+  font-size: 1em;
+  padding-top:20px;
+  border-color:white;
+  border-style: solid;
+
 }
-main footer p {
-    margin: 0;
-    padding: .5em;
-    width: 100%;
-    height: 100%;
+
+.completed{
+text-decoration: line-through;
 }
-main > footer {
-    display:flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: .5em;
+
+main{
+padding-bottom:5rem;
 }
-.bottom-tab {
-    border: 1px solid black;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.selected-tab {
-    background-color:white;
-    color: #2E1760; /* midnight blue */
-    cursor: default;
-}
-.footer-add {
-    margin: auto auto 1em auto;
-    flex-shrink: 0;
-    width: 100%;
-    max-width: 500px;
-    padding: .5em;
-    display:flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #3423A6; /* Blue (Pantone) */
-    border-radius: 0 0 10px 10px;
-    border: 2px solid #DFF3E4; /* Honeydew */
-    border-top: 1px solid #DFF3E4; /* Honeydew */
-}
-.footer-add input {
-    height: 3em;
-    width: 80%;
-    border-radius: 3px;
-    border: 2px solid #7180B9; /* Glaucous */
-    font-family: 'Lato', sans-serif;
-    font-size: 1em;
-    padding: 0 .25em;
-}
-.error-input {
-    background-color: #DFF3E4; /* Honeydew */
-}
-.clearall {
-    margin-left: auto;
-    width: max-content;
+
+main h1{
+padding-bottom:1rem;
 }
