@@ -1,17 +1,20 @@
-import ToDos from './toDos.js';
+import ToDos from './ToDos.js';
 
-const myToDoList = new ToDos('todo');
+const myTask = new ToDos('todo');
 window.addEventListener('load', () => {
-  myToDoList.showToDoList();
-  myToDoList.addTabListeners();
+  myTask.showToDoList();
+  myTask.addTabListeners();
 });
 
 const inputField = document.getElementById('new_task');
 const addNew = document.getElementById('add');
 
+addNew.addEventListener('click', () => {
+  myTask.addToDo();
+});
 
 inputField.addEventListener('keyup', function(event) {
-  if(event.keyIdentifier !== undefined) {
+  if(event.keyCode === 13) {
     event.preventDefault();
     addNew.click();
   }

@@ -1,4 +1,4 @@
-let toDoList = null; 
+let toDoList = null;
 
 export default class ToDos {
     constructor(elementID) {
@@ -8,40 +8,53 @@ export default class ToDos {
 
     addEventListeners() {
         const listItems = Array.from(this.parentElement.children);
-        
-        if(listItems.length > 0 && listItems[0].children[0]){
-        listItems.forEach(item => {
-            item.children[0].addEventListener('click', event => {
-                this.completeToDo(event.currentTarget.id);
+
+        if (listItems.length > 0 && listItems[0].children[0]) {
+            listItems.forEach(item => {
+                item.children[0].addEventListener('click', event => {
+                    this.completeToDo(event.currentTarget.id);
+                })
+                item.children[2].addEventListener('click', event => {
+                    this.removeItem(event.currentTarget.parentElement.children[0].id);
+                })
             })
-            item.children[2].addEventListener('click', event => {
-                this.removeItem(event.currentTarget.parentElement.children[0].id);
-            })
-        })}
+        }
     }
 
-        addToDo(){ 
-            const taskContent = document.getElementById('new_task');
-            saveToDo(this.LSkey, taskContent);
-            this.showToDoList();
-        }
+    addTabListeners() {
+        const listTabs = Array.from(document.querySelectorAll('.remaining'));
+        listTabs.forEach(tab => {
+            tab.addEventListener('click', event => {
+                for (let item in listTabs) {
+                    listTabs[item].classList.remove('selected');
+                }
+                event.currentTarget.classList.add('selected');
+                this.filterToDos(event.currentTarget.id);
+            })
+        })
+    }
 
-        showToDoList(){
-            getToDos(this.LSkey);
-            renderToDoList(this.parentElement, toDoList);
-            if(toDoList != null){
-                this.addEventListeners();
-            }
+    addToDo() {
+        const taskContent = document.getElementById('new_task');
+        saveToDo(this.LSkey, taskContent);
+        this.showToDoList();
+    }
+
+    showToDoList() {
+        getToDos(this.LSkey);
+        renderToDoList(this.parentElement, toDoList);
+        if (toDoList != null) {
+            this.addEventListeners();
         }
+    }
 
     completeToDo(itemID) {
         let oneTask = toDoList.findIndex(task => task.id == itemID);
-        console.log(oneTask);
         toDoList[oneTask].completed = !toDoList[oneTask].completed;
         lsHelpers.writeToLS(this.LSkey, toDoList);
         markDone(itemID);
     }
-    
+
     removeItem(itemID) {
         let oneTask = toDoList.findIndex(task => task.id == itemID);
         toDoList.splice(oneTask, 1);
@@ -49,25 +62,12 @@ export default class ToDos {
         this.showToDoList();
     }
 
-    addTabListeners() { 
-        const listTabs = Array.from(document.querySelectorAll('.remaining'));
-        listTabs.forEach(tab => {
-            tab.addEventListener('click', event => {
-                for (let item in listTabs){
-                    listTabs[item].classList.remove('selected');
-                }
-                event.currentTarget.classList.add('selected');
-                this.filterToDos(event.currentTarget.id);
-            })
-        })    
-    }
-    filterToDos(category){
+    filterToDos(category) {
         category = filterBy(category);
         const arrFilter = toDoList.filter(task => {
-            if (category != null){
+            if (category != null) {
                 return task.completed == category;
-            }
-            else {
+            } else {
                 return task;
             }
         })
@@ -76,88 +76,90 @@ export default class ToDos {
     }
 }
 
-function getToDos(key){
+function getToDos(key) {
     console.log(`getToDos invoked with ${key}`);
-    if (toDoList == null){
+    if (toDoList == null) {
         toDoList = [];
         let arrLocal = lsHelpers.readFromLS(key);
-        console.log(arrLocal);
-        if(arrLocal != null){
+        if (arrLocal != null) {
             arrLocal.forEach(task => toDoList.push(task));
         }
     }
-    console.log(toDoList);
     return toDoList;
 }
 
-function saveToDo(key, taskContent){
+function saveToDo(key, taskContent) {
     let taskArr = getToDos(key);
     let taskID = Date.now();
 
-    if(taskContent && taskContent.value){
-        const newTask = {id: taskID, content: taskContent.value, completed: false};
+    if (taskContent && taskContent.value) {
+        const newTask = {
+            id: taskID,
+            content: taskContent.value,
+            completed: false
+        };
         taskArr.push(newTask);
-        lsHelpers.writeToLS(key,taskArr);
+        lsHelpers.writeToLS(key, taskArr);
         taskContent.classList.remove("error-input");
         taskContent.value = '';
     } else {
         taskContent.classList.add("error-input");
-    }
-    taskContent.focus();
+    } taskContent.focus();
 }
 
 function renderToDoList(parent, thisList) {
-    console.log(thisList);
     parent.innerHTML = '';
-    if(thisList != null && thisList.length > 0){
-    thisList.forEach(taskObject => {
-        parent.appendChild(renderOneToDo(taskObject));
-    })
-    }else {
+    if (thisList != null && thisList.length > 0) {
+        thisList.forEach(taskObject => {
+            parent.appendChild(renderOneToDo(taskObject));
+        })
+    } else {
         const emptyList = document.createElement('li');
         emptyList.innerHTML = `No Tasks Found`
         parent.appendChild(emptyList);
-    }
-    updateCount(thisList);
+    } updateCount(thisList);
 }
 
 function renderOneToDo(task) {
     const oneTask = document.createElement('li');
     task.completed ? oneTask.classList.toggle('completed') : '';
-    oneTask.innerHTML = 
-        `<input id="${task.id}" name="${task.content}" type="checkbox" value="none" ${task.completed ? 'checked' : ''}>
-        <label for="${task.id}">${task.content}</label>
+    oneTask.innerHTML = `<input id="${task.id
+        }" name="${task.content
+        }" type="checkbox" value="none" ${task.completed ? 'checked' : ''
+        }>
+        <label for="${task.id
+        }">${task.content
+        }</label>
         <div class="remove">X</div>`;
     return oneTask;
 }
 
-function updateCount(list){
+function updateCount(list) {
     const counter = document.getElementById('counter');
-    if(list != null) {
-        counter.innerHTML = `${list.length} Task(s) -`;
+    if (list != null) {
+        counter.innerHTML = `${list.length
+            } Task(s) -`;
     } else {
         counter.innerHTML = ` 0 Tasks -`;
     }
 }
 
-function markDone(itemID){
+function markDone(itemID) {
     let taskContainer = document.getElementById(itemID).parentElement;
     taskContainer.classList.toggle('completed');
 }
 
-function filterBy(category){
-    switch(category){
-        case 'active':
-            category = false;
+function filterBy(category) {
+    switch (category) {
+        case 'active': category = false;
             break;
-        case 'completed':
-            category = true;
+        case 'completed': category = true;
             break;
-        case 'all':
-            category = null;
+        case 'all': category = null;
             break;
     }
     return category;
 }
 
 import * as lsHelpers from './ls.js';
+import * as utilHelpers from './utilities.js';
