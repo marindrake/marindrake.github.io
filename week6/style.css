@@ -36,7 +36,8 @@ body {
 h1 {
   font-family: "Rock Salt", Gadget, sans-serif;
   text-align: center;
-  color: black;
+  color: yellow;
+  padding: 15px;
 }
 
 h2 {
@@ -90,6 +91,7 @@ ul {
 main ul li{
     background-color: white;
     margin:5px;
+    padding: 7px;
 }
 #counter{
     color:white;
