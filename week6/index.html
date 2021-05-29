@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <main>
+        <main class="container">
             <h1>Todos</h1>
             <ul id="todo"></ul>
             <div class="menu">
@@ -31,21 +31,19 @@
                     </button>
                 </div>
             </div>
+            <footer>
+                <form>
+                    <input type="text" id="new_task" placeholder="Enter Item">
+                    <button id="add">+</button>
+                </form>
+            </footer>
+            <footer>
+                &copy;
+                <span id="year"></span>
+                | Alejandro G. Marin | Utah |
+                <a id="byulink" href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a><br>
+            </footer>
         </main>
         <script src="js/main.js" type="module"></script>
-
-        <footer>
-            <form>
-                <input type="text" id="new_task" placeholder="Enter Item">
-                <button id="add">+</button>
-            </form>
-        </footer>
-
-        <footer>
-            &copy;
-            <span id="year"></span>
-            | Alejandro G. Marin | Utah |
-            <a id="byulink" href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a><br>
-        </footer>
     </body>
 </html>
