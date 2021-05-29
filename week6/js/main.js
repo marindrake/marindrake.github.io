@@ -16,7 +16,3 @@ inputField.addEventListener('keyup', function(event) {
     addNew.click();
   }
 });
-
-addNew.addEventListener('click', () => {
-  myToDoList.addToDo();
-});
