@@ -109,7 +109,7 @@ button {
 #todo li {
     display: flex;
     align-items: center;
-    font-family: "Tajawal", Gadget, sans-serif;
+    font-family: "Shadows Into Light", Gadget, sans-serif;
 }
 
 .remove {
@@ -153,7 +153,8 @@ main .container {
 .footer-info {
     width: 90%;
     background-color: black;
-    font-family: "Shadows Into Light", Gadget, sans-serif;
+    font-family: "Tajawal", Gadget, sans-serif;
+    font-size: 15px;
 }
 
 input[type=checkbox] {
