@@ -1,168 +1,179 @@
-@import url('https://fonts.googleapis.com/css?family=Rock+Salt%7cShadows+Into+Light%7cTajawal&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt%7cShadows+Into+Light%7cTajawal &display=swap');
 
 * {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 main {
-  flex: 1 0 auto;
-  width: 100%;
-  max-width: 500px;
-  background: DodgerBlue;
+    flex: 1 0 auto;
+    width: 100%;
+    max-width: 500px;
+    background: DodgerBlue;
 }
 
 #content {
-  max-width: 940px;
-  margin: 0 auto;
+    max-width: 940px;
+    margin: 0 auto;
 }
 
 .container {
-	width: 400px !important;
-  box-shadow: 4px 4px 11px 3px rgb(0 0 0 / 30%);
+    width: 400px !important;
+    box-shadow: 4px 4px 11px 3px rgb(0 0 0 / 30%);
 }
 
 body {
-  font-size: 18px;
-  line-height: 1.5;
-  margin: 0 auto;
-  min-height: 100vh;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0 auto;
+    min-height: 100vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
-  font-family: "Rock Salt", Gadget, sans-serif;
-  text-align: center;
-  color: yellow;
-  padding: 15px;
+    font-family: "Rock Salt", Gadget, sans-serif;
+    text-align: center;
+    color: yellow;
+    padding: 15px;
 }
 
 h2 {
-  border-bottom: 1px solid gray;
-  max-width: 980px;
+    border-bottom: 1px solid gray;
+    max-width: 980px;
 }
 
-header, footer {
-  color: white;
-  text-align: center;
+header,
+footer {
+    color: white;
+    text-align: center;
 }
 
 header {
-  padding: 15px;
+    padding: 15px;
 }
 
 footer {
-  padding: .7rem 1.25rem;
-  font-size: 18px;
+    padding: 0.7rem 1.25rem;
+    font-size: 18px;
 }
 
 #byulink {
-  color: yellow;
-  text-decoration: underline;
+    color: yellow;
+    text-decoration: underline;
 }
 
 #lastup {
-  color: yellow;
+    color: yellow;
 }
 
 section {
-  padding-left: 10px;
-  margin: 1.25rem auto;
-  max-width: 940px;
+    padding-left: 10px;
+    margin: 1.25rem auto;
+    max-width: 940px;
 }
 
-button:hover {
-  cursor: pointer;
-  background-color: black;
-  color: white;
-}
-
-.menu{
+.menu {
     display: flex;
 }
 
 ul {
-  list-style-type: none;
+    list-style-type: none;
 }
 
-main ul li{
+main ul li {
     background-color: white;
-    margin:5px;
-    padding: 7px;
+    margin: 5px;
+    padding: 5px;
 }
-#counter{
-    color:white;
-    font-size:1.5em;
+
+#counter {
+    color: white;
+    font-size: 1.5em;
     margin: auto;
 }
 
 button {
-  background-color: yellow;
-  color: black;
-  border-radius: 5px;
-  padding: 7px;
-  font-size: 1em;
+    background-color: yellow;
+    color: black;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 1em;
 }
 
-#todo{
+#todo {
     display: inline;
 }
-#todo li{
-  display: flex;
-  align-items:center;   
+#todo li {
+    display: flex;
+    align-items: center;
+    font-family: "Tajawal", Gadget, sans-serif;
 }
 
 .remove {
-  font-weight: bold;
-  font-size: 1.5em;
-  margin-left: auto;
-  padding-right:1rem;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-left: auto;
+    padding-right: 1rem;
 }
 
 .remove:hover {
-  color: red;
-  cursor: pointer;
+    color: red;
+    cursor: pointer;
 }
-input{
-  border-radius: 5px;
-  font-size: 1em;
-  padding-top:3px;
-  border-color:white;
-}
-
-.completed{
-  text-decoration: line-through;
+input {
+    border-radius: 5px;
+    font-size: 1em;
+    padding-top: 3px;
+    border-color: white;
 }
 
-main .container{
-  background: DodgerBlue;
-  padding-bottom:5rem;
+.completed {
+    text-decoration: line-through;
+}
+
+main .container {
+    background: DodgerBlue;
+    padding-bottom: 5rem;
 }
 
 .footer-task {
-  width: 100%;
+    width: 100%;
 }
 
 .footer-task input {
-  height: 2em;
-  width: 80%;
-  border: 2px solid black;
-  padding: 0 .25em;
+    height: 2em;
+    width: 80%;
+    border: 2px solid black;
+    padding: 0 0.25em;
 }
 
 .footer-info {
-  background-color: black;
+    width: 90%;
+    background-color: black;
+    font-family: "Shadows Into Light", Gadget, sans-serif;
 }
 
 input[type=checkbox] {
-  width: 2rem;
-  height: 1rem;
+    width: 2rem;
+    height: 1rem;
 }
 
 div.menu {
-  padding: 1.5em;
-  justify-content: space-between;
+    padding: 1.5em;
+    justify-content: space-between;
+}
+
+.selected {
+    background-color: white;
+    cursor: default;
+    padding: 1px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
 }

@@ -22,7 +22,7 @@ export default class ToDos {
     }
 
     addTabListeners() {
-        const listTabs = Array.from(document.querySelectorAll('.remaining'));
+        const listTabs = Array.from(document.querySelectorAll('.tasks'));
         listTabs.forEach(tab => {
             tab.addEventListener('click', event => {
                 for (let item in listTabs) {
@@ -138,7 +138,7 @@ function updateCount(list) {
     const counter = document.getElementById('counter');
     if (list != null) {
         counter.innerHTML = `${list.length
-            } Task(s) -`;
+            } Tasks`;
     } else {
         counter.innerHTML = ` 0 Tasks -`;
     }
