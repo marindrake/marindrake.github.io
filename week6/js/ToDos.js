@@ -162,4 +162,3 @@ function filterBy(category) {
 }
 
 import * as lsHelpers from './ls.js';
-import * as utilHelpers from './utilities.js';
