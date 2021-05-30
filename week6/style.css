@@ -40,11 +40,6 @@ h1 {
     padding: 15px;
 }
 
-h2 {
-    border-bottom: 1px solid gray;
-    max-width: 980px;
-}
-
 header,
 footer {
     color: white;
