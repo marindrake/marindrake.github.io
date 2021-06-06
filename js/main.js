@@ -6,6 +6,7 @@ const links = [
   { label: 'Week 5 Notes', url: 'week5/index.html', },
   { label: 'Challenge One: Todo', url: 'week6/index.html', },
   { label: 'Week 7 Notes', url: 'week7/index.html', },
+  { label: 'Week 8 Notes', url: 'week8/index.html', },
   ];
 
   var list = document.getElementsByTagName('ol');
