@@ -1,0 +1,18 @@
+body {
+    max-width: 800px;
+    text-align: center;
+}
+
+.content {
+    margin: 0 auto;
+}
+
+ol, ul {
+    display: table;
+    margin: 0 auto;
+
+}
+
+li {
+    text-align: left;
+}
