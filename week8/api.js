@@ -41,8 +41,6 @@ async function getPeople(url) {
     } else {
         document.querySelector("#previous").hidden = true;
     }
-
-
 }
 
 async function getPerson(url) {
