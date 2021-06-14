@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt%7cShadows+Into+Light%7cTajawal &display=swap');
+
+body {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.content {
+    margin: 0 auto;
+    font-family: "Tajawal", Gadget, sans-serif;
+    padding: 25px;
+}
+
+ol, ul {
+    display: table;
+    margin: 0 auto;
+}
+
+li {
+    text-align: left;
+    font-family: "Shadows Into Light", Gadget, sans-serif;
+}
+
+h1 {
+    font-family: "Rock Salt", Gadget, sans-serif;
+    text-align: center;
+    color: white;
+    background-color: dodgerblue;
+    padding: 15px;
+}
+
+.container {
+    width: 400px !important;
+    box-shadow: 4px 4px 11px 3px rgb(0 0 0 / 30%);
+}
