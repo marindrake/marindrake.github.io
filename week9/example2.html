@@ -4,99 +4,158 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css"/>
         <link rel="stylesheet" href="styles.css"/>
-        <title>Examples: Canvas, SVG, and Drag and Drop</title>
-        <style>
-            .myCanvas {
-                border: dotted 2px black;
-                margin: 0 20px;
-            }
-
-            #src_copy,
-            #src_move {
-                color: rgb(10, 92, 175);
-                border: 5px solid black;
-                width: 300px;
-                height: 50;
-                margin: 0;
-                padding: 2em;
-            }
-            #dest_copy,
-            #dest_move {
-                border: 5px solid DodgerBlue;
-                width: 300px;
-                height: 50;
-                margin: 0;
-                padding: 2em;
-            }
-        </style>
+        <title>Document</title>
     </head>
     <body>
         <section class='dojo'>
             <div class='quiz-body'>
-                <header>
-                    <h1>Examples</h1>
-                </header>
-                <div class="wrap">
-                    <h2>Canvas</h2>
-                    <canvas class="myCanvas" width="200" height="200">
-                        Sorry! Your browser doesn’t support Canvas.
-                    </canvas>
-                    <canvas id="myCanvas2" class="myCanvas" width="200" height="200">
-                        Sorry! Your browser doesn’t support Canvas.
-                    </canvas>
-                    <canvas id="myCanvas3" class="myCanvas" width="200" height="200">
-                        Sorry! Your browser doesn’t support Canvas.
-                    </canvas>
-                </div>
+              <header>
+                <div id='timer'>Time: <strong>20</strong></div>
+                <div id='score'>Score: <strong>0</strong></div>
+                <div id='hiScore'>High Score: <strong></strong></div>
+                <h1>Quiz Ninja!</h1>
+              </header>
+            <div id='question'></div>
+            <div id='response'></div>
+            <div id='result'></div>
+            <div id='info'></div>
+            <button id='start'>Click to Start</button>
             </div>
-        </section>
+          </section>
+        <script>
+            const url = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/questions.json';
 
-        <section class='dojo'>
-            <div class='quiz-body3'>
-                <div class="wrap">
-                    <h2>SVG</h2>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 400 400">
-                        <desc>Drawing a rectangle</desc>
-                        <rect x="10" y="10" width="100" height="100" fill="blue" stroke="red" stroke-width="3"/>
-                    </svg>
-                </div>
-            </div>
-        </section>
+fetch(url)
+  .then(res => res.json())
+  .then(quiz => {
+    view.start.addEventListener('click', () => game.start(quiz.questions), false);
+    view.response.addEventListener('click', (event) => game.check(event), false);
+});
 
-        <section class='dojo'>
-            <div class='quiz-body'>
-                <div class="wrap">
-                    <h2>Drag and Drop</h2>
-                    <!-- 
-                       This example demonstrates using various HTML Drag and Drop interfaces including:
-                       * Global "draggable" attribute
-                       * Event handlers for dragstart, dragover and drop
-                       * Global event handlers for ondragstart, ondragover and ondrop
-                       * Using the DataTransfer interface to copy and move elements (<div>)
-                    -->
-                    <h3>Drag and Drop: Copy and Move elements with
-                        <code>DataTransfer</code>
-                    </h3>
-                    <div draggable="true" id="src_copy" ondragstart="dragstart_handler(event);" ondragend="dragend_handler(event);">
-                        Select this element and drag to the
-                        <strong>Copy Drop Zone</strong>.
-                    </div>
-                    <div id="dest_copy" ondrop="drop_handler(event);" ondragover="dragover_handler(event);">
-                        <strong>Copy Drop Zone</strong>
-                    </div>
-                    <div draggable="true" id="src_move" ondragstart="dragstart_handler(event);" ondragend="dragend_handler(event);">
-                        Select this element and drag to the
-                        <strong>Move Drop Zone</strong>.
-                    </div>
-                    <div id="dest_move" ondrop="drop_handler(event);" ondragover="dragover_handler(event);">
-                        <strong>Move Drop Zone</strong>
-                    </div>
+// Utility functions
+function random(a,b=1) {
+// if only 1 argument is provided, we need to swap the values of a and b
+  if (b === 1) {
+	  [a,b] = [b,a];
+  }
+  return Math.floor((b-a+1) * Math.random()) + a;
+}
 
-                </div>
-            </section>
+function shuffle(array) {
+  for (let i = array.length; i; i--) {
+      let j = random(i)-1;
+      [array[i - 1], array[j]] = [array[j], array[i - 1]];
+  }
+}
 
-            <script src="canvas.js"></script>
-        </body>
+// View Object
+const view = {
+  score: document.querySelector('#score strong'),
+  question: document.querySelector('#question'),
+  result: document.querySelector('#result'),
+  info: document.querySelector('#info'),
+  start: document.querySelector('#start'),
+  response: document.querySelector('#response'),
+  timer: document.querySelector('#timer strong'),
+  hiScore: document.querySelector('#hiScore strong'),
+  render(target,content,attributes) {
+      for(const key in attributes) {
+        target.setAttribute(key, attributes[key]);
+      }
+      target.innerHTML = content;
+  },
+  show(element){
+    element.style.display = 'block';
+  },
+  hide(element){
+    element.style.display = 'none';
+  },
+  setup(){
+    this.show(this.question);
+    this.show(this.response);
+    this.show(this.result);
+    this.hide(this.start);
+    this.render(this.score,game.score);
+    this.render(this.result,'');
+    this.render(this.info,'');
+    this.render(this.hiScore, game.hiScore());
+  },
+  teardown(){
+    this.hide(this.question);
+    this.hide(this.response);
+    this.show(this.start);
+    this.render(this.hiScore, game.hiScore());
+  },
+  buttons(array){
+    return array.map(value => `<button>${value}</button>`).join('');
+  }
+};
+
+const game = {
+  start(quiz){
+    console.log('start() invoked');
+    this.score = 0;
+    this.questions = [...quiz];
+    view.setup();
+    this.secondsRemaining = 20;
+    this.timer = setInterval( this.countdown , 1000 );
+    this.ask();
+  },
+  countdown() {
+    game.secondsRemaining--;
+    view.render(view.timer,game.secondsRemaining);
+      if(game.secondsRemaining <= 0) {
+        game.gameOver();
+      }
+  },
+  ask(name){
+    console.log('ask() invoked');
+    if(this.questions.length > 2) {
+      shuffle(this.questions);
+      this.question = this.questions.pop();
+      const options = [this.questions[0].realName, this.questions[1].realName, this.question.realName];
+      shuffle(options);
+      const question = `What is ${this.question.name}'s real name?`;
+      view.render(view.question,question);
+      view.render(view.response,view.buttons(options));
+    }
+    else {
+      this.gameOver();
+    }
+  },
+  check(event){
+    console.log('check(event) invoked');
+    const response = event.target.textContent;
+    const answer = this.question.realName;
+    if(response === answer){
+      console.log('correct');
+      view.render(view.result,'Correct!',{'class':'correct'});
+      this.score++;
+      view.render(view.score,this.score);
+    } else {
+      console.log('wrong');
+      view.render(view.result,`Wrong! The correct answer was ${answer}`,{'class':'wrong'});
+    }
+    this.ask();
+  },
+  gameOver(){
+    console.log('gameOver() invoked');
+    view.render(view.info,`Game Over, you scored ${this.score} point${this.score !== 1 ? 's' : ''}`);
+    view.teardown();
+    clearInterval(this.timer);
+  },
+  hiScore(){
+    const hi = localStorage.getItem('highScore') || 0;
+    if(this.score > hi || hi === 0) {
+      localStorage.setItem('highScore',this.score);
+      view.render(view.info,'** NEW HIGH SCORE! **');
+    }
+    return localStorage.getItem('highScore');
+  }
+}
+        </script>
+
     </body>
 </html>
