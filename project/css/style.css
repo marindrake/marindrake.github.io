@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Loved+by+the+King&family=Lovers+Quarrel&display=swap');
+
+h1, h2{
+    font-family: "Lovers Quarrel", Gadget, sans-serif;
+    font-size: 65px;
+    color: #7A0000;
+    text-align: center;
+    margin: 0px;
+}
+
+h2{
+    font-family: "Lovers Quarrel", Gadget, sans-serif;
+    font-size: 45px;
+    color: black;
+    background: #FF5C5C;
+    text-align: center;
+}
+
+footer{
+    margin-top: 10px;
+    font-family: "Love Ya Like A Sister", Gadget, sans-serif;
+    font-size: 50px;
+    background: #7A0000;
+    font-size: 15px;
+    padding: 15px;
+}
+
+.footer-info{
+    font-family: "Love Ya Like A Sister", Gadget, sans-serif;
+    font-size: 15px;
+    background: #7A0000;
+    color: #FF5C5C;
+    text-align: center;
+}
+
+.info p{
+    background: #7A0000;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+}
+
+p{
+    font-family: "Loved by the King", Gadget, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+.container {
+    margin: 0 auto;
+    width: 680px !important;
+    box-shadow: 4px 4px 11px 3px #7A0000;
+    padding: 15px;
+}
+
+.calculate{
+    font-family: "Love Ya Like A Sister", Gadget, sans-serif;
+    font-size: 20px;
+    background: #7A0000;
+    color: white;
+    padding: 10px;
+}
+
+input{
+    font-family: "Love Ya Like A Sister", Gadget, sans-serif;
+    font-size: 20px;
+    background: white;
+    color: #FF5C5C;
+    padding: 10px;
+    margin: 25px;
+}
