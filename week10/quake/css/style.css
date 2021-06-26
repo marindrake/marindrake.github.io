@@ -1,0 +1,134 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1em;
+  background-color: rgba(200, 200, 200, 0.1);
+}
+.formHeader h1,
+.formHeader h2 {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+.formHeader h1 {
+  text-align: center;
+}
+main {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1em;
+  border-radius: 0.7em;
+  background-color: white;
+}
+li a:hover {
+  padding-left: 0.5em;
+}
+.oddSection h1 {
+  text-align: left;
+}
+.mainBtn {
+  background-color: red;
+  padding: 0.7em 1em;
+  color: white;
+  border: none;
+  margin-left: 0.4em;
+  border-radius: 0.3em;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+  transition: 200ms ease-in-out;
+}
+.mainBtn:hover {
+  opacity: 0.6;
+}
+.oddSection {
+  padding: 2em;
+}
+.exerciseSection {
+  padding: 2em;
+}
+.exerciseSection h1 {
+  text-align: left;
+}
+input {
+  margin-top: 5px;
+  border: none;
+  border-radius: 3px;
+  border: 1px solid lightblue;
+  padding: 0.6em;
+  width: 200px;
+  margin-bottom: 0.5em;
+  text-indent: 5px;
+  margin-left: 0.4em;
+  font-size: 0.9em;
+  transition: 200ms ease-in-out;
+}
+input:focus {
+  outline: none;
+  border-color: red;
+}
+.weekOne h1 a {
+  text-decoration: none;
+}
+.storySection {
+  padding: 2em;
+}
+.storySection .mainBtn {
+  margin: 2em 0.5em;
+}
+textarea {
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid lightblue;
+  padding: 0.6em;
+  margin-bottom: 0.5em;
+  text-indent: 5px;
+  margin-left: 0.4em;
+  font-size: 0.9em;
+  transition: 200ms ease-in-out;
+  width: 94%;
+  resize: none;
+  outline: none;
+}
+textarea:focus {
+  border-color: red;
+}
+.bgHeader {
+  background-color: red;
+  transition: 200ms ease-in-out;
+  border-radius: 0.4em;
+  text-align: center;
+}
+.bgHeader:hover {
+  background-color: white;
+}
+.bgHeader:hover a {
+  background-color: transparent;
+  color: red;
+}
+.bgHeader a {
+  background-color: transparent;
+  transition: 200ms ease-in-out;
+  text-decoration: none;
+}
+h2,
+h3,
+h4 {
+  color: black;
+  margin: 0;
+}
+ul {
+  margin-top: 0;
+}
+h2 {
+  padding: 0;
+}
+.weekTwo h1,
+.weekTwo h2 {
+  margin: 1em 0;
+}
+.weekFour input {
+  width: unset;
+}
+.ticHeading {
+  border-radius: 0.4em 0.4em 0 0;
+}
