@@ -11,8 +11,7 @@ h1, h2{
 h2{
     font-family: "Lovers Quarrel", Gadget, sans-serif;
     font-size: 45px;
-    color: black;
-    background: #FF5C5C;
+    color: #FF5C5C;
     text-align: center;
 }
 
@@ -20,7 +19,7 @@ footer{
     margin-top: 10px;
     font-family: "Love Ya Like A Sister", Gadget, sans-serif;
     font-size: 50px;
-    background: #7A0000;
+    background: black;
     font-size: 15px;
     padding: 15px;
 }
@@ -28,13 +27,12 @@ footer{
 .footer-info{
     font-family: "Love Ya Like A Sister", Gadget, sans-serif;
     font-size: 15px;
-    background: #7A0000;
     color: #FF5C5C;
     text-align: center;
 }
 
 .info p{
-    background: #7A0000;
+    background: black;
     color: white;
     padding: 15px;
     font-size: 20px;
@@ -65,7 +63,7 @@ input{
     font-family: "Love Ya Like A Sister", Gadget, sans-serif;
     font-size: 20px;
     background: white;
-    color: #FF5C5C;
+    color: #7A0000;
     padding: 10px;
     margin: 25px;
 }
