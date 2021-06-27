@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Loved+by+the+King&family=Lovers+Quarrel&display=swap');
 
+body{
+   background-color: black;
+}
+
 h1, h2{
     font-family: "Lovers Quarrel", Gadget, sans-serif;
     font-size: 65px;
-    color: #7A0000;
+    color: #FF5C5C;
     text-align: center;
     margin: 0px;
 }
@@ -19,7 +23,6 @@ footer{
     margin-top: 10px;
     font-family: "Love Ya Like A Sister", Gadget, sans-serif;
     font-size: 50px;
-    background: black;
     font-size: 15px;
     padding: 15px;
 }
@@ -32,7 +35,6 @@ footer{
 }
 
 .info p{
-    background: black;
     color: white;
     padding: 15px;
     font-size: 20px;
@@ -66,4 +68,8 @@ input{
     color: #7A0000;
     padding: 10px;
     margin: 25px;
+}
+
+form{
+    text-align: center;
 }
