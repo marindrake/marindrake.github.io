@@ -1,25 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Loved+by+the+King&family=Lovers+Quarrel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister &family=Loved+by+the+King&family=Lovers+Quarrel&display=swap');
 
-body{
-   background-color: black;
+body {
+    background-color: black;
 }
 
-h1, h2{
+h1,
+h2 {
     font-family: "Lovers Quarrel", Gadget, sans-serif;
     font-size: 65px;
     color: #FF5C5C;
     text-align: center;
-    margin: 0px;
+    margin: 0;
 }
 
-h2{
+h2 {
     font-family: "Lovers Quarrel", Gadget, sans-serif;
     font-size: 45px;
     color: #FF5C5C;
     text-align: center;
 }
 
-footer{
+footer {
     margin-top: 10px;
     font-family: "Love Ya Like A Sister", Gadget, sans-serif;
     font-size: 50px;
@@ -27,20 +28,20 @@ footer{
     padding: 15px;
 }
 
-.footer-info{
+.footer-info {
     font-family: "Love Ya Like A Sister", Gadget, sans-serif;
     font-size: 15px;
     color: #FF5C5C;
     text-align: center;
 }
 
-.info p{
+.info p {
     color: white;
     padding: 15px;
     font-size: 20px;
 }
 
-p{
+p {
     font-family: "Loved by the King", Gadget, sans-serif;
     font-size: 16px;
     color: white;
@@ -53,16 +54,30 @@ p{
     padding: 15px;
 }
 
-.calculate{
-    font-family: "Love Ya Like A Sister", Gadget, sans-serif;
-    font-size: 20px;
+.calculate {
     background: #7A0000;
     color: white;
+    border-color: #FF5C5C;
+    font-size: 20px;
     padding: 10px;
 }
 
-input{
-    font-family: "Love Ya Like A Sister", Gadget, sans-serif;
+.calculate:hover {
+    background-color: #FF5C5C;
+    border-color: #7A0000;
+    cursor: pointer;
+}
+
+form,
+section {
+    text-align: center;
+}
+/*
+.invisible {
+    display: none;
+}
+*/
+input {
     font-size: 20px;
     background: white;
     color: #7A0000;
@@ -70,6 +85,17 @@ input{
     margin: 25px;
 }
 
-form{
-    text-align: center;
+input:invalid {
+    border: 2px dashed White;
+}
+
+input:invalid:required {
+    background-image: linear-gradient(to right, white, black);
+    background-color: white;
+}
+
+input:valid {
+    border: 2px solid white;
+    background-color: #FF5C5C;
+    color: white;
 }
