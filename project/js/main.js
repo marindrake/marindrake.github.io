@@ -32,6 +32,6 @@ function calculate(){
 		document.getElementById('result').textContent = result.result;
 	
 	}
-	
+
 	main();
 }
