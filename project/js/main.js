@@ -1,5 +1,6 @@
 function calculate(){
 	async function getPercentage(){
+		event.preventDefault();
 		let fname = document.forms["myForm"]["yourname"].value;
 		let sname = document.forms["myForm"]["yourcrush"].value;
 	
