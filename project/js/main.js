@@ -1,6 +1,5 @@
 function calculate(){
 	async function getPercentage(){
-
 		const inpObjfn =  document.getElementById("fn");
 		const inpObjsn =  document.getElementById("sn");
 		//Form Validation
