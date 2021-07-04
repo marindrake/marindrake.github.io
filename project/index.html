@@ -23,13 +23,17 @@
             <h2>Your crush</h2>
             <input  id="sn" type="text" name="yourcrush" size="25" placeholder="Your crush" required="required">
             <button class="calculate" onclick="calculate()">Calculate</button>
+            <button class="calculate" onclick="tryagain()" value="Reset form">Try again</button>
         </form>
 
         <section class="main-result">
             <h3 id="main-result-block" class="main-result-block invisible">
                 <span id="percentage"></span>
-                <span>% Percentage.</span>
-                <span id="result"></span>
+                <span>% Percentage</span>
+                <img id="happy" class="result_image invisible" src="/project/images/happy.gif">
+                <img id="neutral" class="result_image invisible" src="/project/images/neutral.gif">
+                <img id="nope" class="result_image invisible" src="/project/images/nope.gif">
+                <div><span id="result"></span></div>
             </h3>
         </section>
 

@@ -106,3 +106,7 @@ input:valid {
     background-color: #FF5C5C;
     color: white;
 }
+
+.result_image{
+    width: 200px;
+}

@@ -9,7 +9,7 @@ function calculate(){
 		event.preventDefault();
 		let fname = document.forms["myForm"]["yourname"].value;
 		let sname = document.forms["myForm"]["yourcrush"].value;
-
+	
 		const apiURL = "https://love-calculator.p.rapidapi.com/getPercentage?fname=" + fname + "&sname=" + sname;
 		try{
 			let response = await fetch(apiURL, {
@@ -38,12 +38,24 @@ function calculate(){
 		const resultBlockElement = document.getElementById('main-result-block');
 		resultBlockElement.classList.remove('invisible');
 		document.getElementById('percentage').textContent = result.percentage;
-		//	if(result.percentage > 80){
 
-	//		}
+		const resulthappy = document.getElementById('happy');
+		const resultneutral = document.getElementById('neutral');
+		const resultnope = document.getElementById('nope');
+		
+		if(result.percentage > 80){
+			resulthappy.classList.remove('invisible');
+		} else if (result.percentage >= 55){	
+			resultneutral.classList.remove('invisible');
+		} else{
+			resultnope.classList.remove('invisible');
+		}
 		document.getElementById('result').textContent = result.result;
-	
 	}
 
 	main();
 }
+
+function myFunction() {
+	document.getElementById("myForm").reset();
+  }
