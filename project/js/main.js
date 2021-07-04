@@ -42,13 +42,18 @@ function calculate(){
 		const resulthappy = document.getElementById('happy');
 		const resultneutral = document.getElementById('neutral');
 		const resultnope = document.getElementById('nope');
+
+		var percentage = result.percentage;
 		
-		if(result.percentage > 80){
+		if(percentage >= 80){
 			resulthappy.classList.remove('invisible');
-		} else if (result.percentage >= 55){	
+			document.getElementById('result').style.color = "green";
+		} else if (percentage >= 55 && percentage < 80){	
 			resultneutral.classList.remove('invisible');
+			document.getElementById('result').style.color = "yellow";
 		} else{
 			resultnope.classList.remove('invisible');
+			document.getElementById('result').style.color = "red";
 		}
 		document.getElementById('result').textContent = result.result;
 	}
