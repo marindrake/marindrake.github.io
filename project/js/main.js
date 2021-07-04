@@ -38,6 +38,9 @@ function calculate(){
 		const resultBlockElement = document.getElementById('main-result-block');
 		resultBlockElement.classList.remove('invisible');
 		document.getElementById('percentage').textContent = result.percentage;
+		//	if(result.percentage > 80){
+
+	//		}
 		document.getElementById('result').textContent = result.result;
 	
 	}
