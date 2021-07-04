@@ -29,7 +29,7 @@ function calculate(){
 	} 
 	}
 	
-	async function main(){
+	async function main(){		
 		console.log('result');
 	
 		let result = await getPercentage();
@@ -56,6 +56,6 @@ function calculate(){
 	main();
 }
 
-function myFunction() {
+function tryagain() {
 	document.getElementById("myForm").reset();
-  }
+}

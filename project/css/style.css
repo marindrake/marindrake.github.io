@@ -69,6 +69,10 @@ p {
     padding: 10px;
 }
 
+#myBtncal{
+    border-color: black;
+}
+
 .calculate:hover {
     background-color: #FF5C5C;
     border-color: #7A0000;
