@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister &family=Loved+by+the+King&family=Lovers+Quarrel&display=swap');
+
+body {
+    background-color: black;
+}
+
+h1,
+h2 {
+    font-family: "Lovers Quarrel", Gadget, sans-serif;
+    font-size: 65px;
+    color: #FF5C5C;
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Lovers Quarrel", Gadget, sans-serif;
+    font-size: 45px;
+    color: #FF5C5C;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Love Ya Like A Sister", Gadget, sans-serif;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+
+footer {
+    margin-top: 10px;
+    font-family: "Love Ya Like A Sister", Gadget, sans-serif;
+    font-size: 50px;
+    font-size: 15px;
+    padding: 15px;
+}
+
+.footer-info {
+    font-family: "Love Ya Like A Sister", Gadget, sans-serif;
+    font-size: 15px;
+    color: #FF5C5C;
+    text-align: center;
+}
+
+.info p {
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+}
+
+p {
+    font-family: "Loved by the King", Gadget, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+.container {
+    margin: 0 auto;
+    width: 380px !important;
+    box-shadow: 4px 4px 11px 3px #7A0000;
+    padding: 15px;
+}
+
+.calculate {
+    background: #7A0000;
+    color: white;
+    border-color: #FF5C5C;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.calculate:hover {
+    background-color: #FF5C5C;
+    border-color: #7A0000;
+    cursor: pointer;
+}
+
+form,
+section {
+    text-align: center;
+}
+
+.invisible {
+    display: none;
+}
+
+input {
+    font-size: 20px;
+    background: white;
+    color: #7A0000;
+    padding: 10px;
+    margin: 25px;
+}
+
+input:invalid {
+    border: 2px dashed White;
+}
+
+input:invalid:required {
+    background-image: linear-gradient(to right, white, black);
+    background-color: white;
+}
+
+input:valid {
+    border: 2px solid white;
+    background-color: #FF5C5C;
+    color: white;
+}
+
+.result_image{
+    width: 200px;
+}
+
+/*Animated heart with Heartbeat Sound*/
+$body-color: #fcc;
+$heart-color: #bd2222;
+$circle-color: #ff8a80;
+
+body {
+ // background: $body-color;
+  height: 100%;
+
+  .container2 {
+    //min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+
+    .first-name {
+      span {
+        padding: 1rem;
+        font-family: "Cedarville Cursive", cursive;
+        font-size: 5rem;
+        letter-spacing: 0.15rem;
+        color: $heart-color;
+      }
+    }
+
+    .last-name {
+      span {
+        padding: 1rem;
+        font-family: "Cedarville Cursive", cursive;
+        font-size: 1.2rem;
+        letter-spacing: 0.15rem;
+        color: $heart-color;
+      }
+    }
+
+    .heart {
+      position: relative;
+      height: 13rem;
+      width: 13rem;
+      background: $circle-color;
+      border-radius: 50%;
+      animation: pulse 2s linear infinite;
+
+      span {
+        position: absolute;
+        color: $body-color;
+        font-family: "Cedarville Cursive", cursive;
+        font-size: 2.2rem;
+        letter-spacing: 0.15rem;
+        z-index: 2;
+        top: 5.5rem;
+        left: 5.2rem;
+        //opacity: 0;
+
+        &:hover {
+          animation: apear 5s ease;
+        }
+      }
+
+      .right-heart {
+        position: absolute;
+        right: 3.2rem;
+        top: 2.8rem;
+        height: 55%;
+        width: 30%;
+        border-radius: 90% 100% 0 90%;
+        background: $heart-color;
+        transform: rotate(45deg);
+      }
+
+      .left-heart {
+        position: absolute;
+        left: 3.5rem;
+        top: 2.9rem;
+        height: 55%;
+        width: 30%;
+        border-radius: 100% 90% 90% 0;
+        background: $heart-color;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes apear {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.5;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0.5;
+  }
+
+  80% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
