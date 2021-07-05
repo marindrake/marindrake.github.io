@@ -108,7 +108,7 @@ input:valid {
 }
 
 .result_image {
-  width: 200px;
+  width: 100%;
 }
 
 #result {
@@ -220,6 +220,7 @@ body .container2 .heart .left-heart {
   width: 100%;
   background-color: #FF5C5C;
   margin-bottom: 20px;
+  margin-top: -15px;
 }
 
 #myBar {

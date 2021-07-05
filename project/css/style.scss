@@ -117,7 +117,7 @@ input:valid {
 }
 
 .result_image{
-    width: 200px;
+    width: 100%;
 }
 
 #result{
@@ -252,6 +252,7 @@ body {
   width: 100%;
   background-color: $text-color;
   margin-bottom: 20px;
+  margin-top: -15px;
 }
 
 #myBar {
