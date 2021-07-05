@@ -22,27 +22,31 @@
             <h2>Your name</h2>
             <input id="fn" type="text" name="yourname" size="25" autofocus placeholder="Your name" required="required">
 
-            <div class="container2">
-                <div class="heart">
-                  <audio>
-                    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/heartbeat.mp3"></source>
-                  </audio>
-                  <span id="percentage"></span>
-                  <div class="right-heart"></div>
-                  <div class="left-heart"></div>
-                </div>
-                <div class="last-name">
-                    <span> percentage </span>
-                  </div>
-              </div>
-    
-
             <h2>Your crush</h2>
             <input  id="sn" type="text" name="yourcrush" size="25" placeholder="Your crush" required="required">
             <button class="calculate" onclick="calculate()">Calculate</button>
             <button class="calculate" onclick="tryagain()" value="Reset form">Try again</button>
+
         </form>
 
+        <div class="container2">
+            <div class="heart">
+              <audio>
+                <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/heartbeat.mp3"></source>
+              </audio>
+              <span id="percentage"></span>
+              <div class="right-heart"></div>
+              <div class="left-heart"></div>
+            </div>
+            <div class="last-name">
+                <span> percentage </span>
+              </div>
+          </div>
+
+          <div id="myProgress">
+            <div id="myBar"></div>
+          </div>
+          
         <section class="main-result">
             <h3 id="main-result-block" class="main-result-block invisible">
                 <span id="percentage"></span>

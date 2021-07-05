@@ -113,6 +113,7 @@ input:valid {
 #result {
   background-color: black;
   padding: 7px;
+  margin-bottom: 67px;
 }
 
 /*Animated heart with Heartbeat Sound*/
@@ -125,6 +126,7 @@ body .container2 {
   justify-content: center;
   align-content: center;
   margin: 0 auto;
+  margin-top: 50px;
 }
 body .container2 .first-name span {
   padding: 1rem;
@@ -212,6 +214,17 @@ body .container2 .heart .left-heart {
   100% {
     opacity: 0;
   }
+}
+#myProgress {
+  width: 100%;
+  background-color: #FF5C5C;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: #7A0000;
+  margin-top: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
