@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister &family=Loved+by+the+King&family=Lovers+Quarrel&display=swap");
 body {
-  background-color: black;
+  background-color: white;
 }
 
 h1,
@@ -15,7 +15,7 @@ h2 {
 h2 {
   font-family: "Lovers Quarrel", Gadget, sans-serif;
   font-size: 45px;
-  color: #FF5C5C;
+  color: #7A0000;
   text-align: center;
 }
 
@@ -42,7 +42,7 @@ footer {
 }
 
 .info p {
-  color: white;
+  color: #7A0000;
   padding: 15px;
   font-size: 20px;
 }
@@ -50,7 +50,7 @@ footer {
 p {
   font-family: "Loved by the King", Gadget, sans-serif;
   font-size: 16px;
-  color: white;
+  color: #7A0000;
 }
 
 .container {
@@ -92,12 +92,12 @@ input {
 }
 
 input:invalid {
-  border: 2px dashed White;
+  border: 2px dashed #ff8a80;
 }
 
 input:invalid:required {
-  background-image: linear-gradient(to right, white, black);
-  background-color: white;
+  background-image: linear-gradient(to right, white, #FF5C5C);
+  background-color: #fcc;
 }
 
 input:valid {
@@ -108,6 +108,11 @@ input:valid {
 
 .result_image {
   width: 200px;
+}
+
+#result {
+  background-color: black;
+  padding: 7px;
 }
 
 /*Animated heart with Heartbeat Sound*/

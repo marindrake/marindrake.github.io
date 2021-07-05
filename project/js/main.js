@@ -53,7 +53,7 @@ function calculate(){
 			document.getElementById('result').style.color = "yellow";
 		} else{
 			resultnope.classList.remove('invisible');
-			document.getElementById('result').style.color = "red";
+			document.getElementById('result').style.color = "#bd2222";
 		}
 		document.getElementById('result').textContent = result.result;
 	}

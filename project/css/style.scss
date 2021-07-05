@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister &family=Loved+by+the+King&family=Lovers+Quarrel&display=swap');
 
+$body-color: #fcc;
+$body-color2: white;
+$heart-color: #bd2222;
+$circle-color: #ff8a80;
+$black-color:black;
+$text-color:#FF5C5C;
+$text-color2:#7A0000;
+
 body {
-    background-color: black;
+    background-color: $body-color2;
 }
 
 h1,
 h2 {
     font-family: "Lovers Quarrel", Gadget, sans-serif;
     font-size: 65px;
-    color: #FF5C5C;
+    color: $text-color;
     text-align: center;
     margin: 0;
 }
@@ -16,14 +24,14 @@ h2 {
 h2 {
     font-family: "Lovers Quarrel", Gadget, sans-serif;
     font-size: 45px;
-    color: #FF5C5C;
+    color: $text-color2;
     text-align: center;
 }
 
 h3 {
     font-family: "Love Ya Like A Sister", Gadget, sans-serif;
     font-size: 25px;
-    color: white;
+    color: $body-color2;
     text-align: center;
 }
 
@@ -38,12 +46,12 @@ footer {
 .footer-info {
     font-family: "Love Ya Like A Sister", Gadget, sans-serif;
     font-size: 15px;
-    color: #FF5C5C;
+    color: $text-color;
     text-align: center;
 }
 
 .info p {
-    color: white;
+    color: $text-color2;
     padding: 15px;
     font-size: 20px;
 }
@@ -51,27 +59,27 @@ footer {
 p {
     font-family: "Loved by the King", Gadget, sans-serif;
     font-size: 16px;
-    color: white;
+    color: $text-color2;
 }
 
 .container {
     margin: 0 auto;
     width: 380px !important;
-    box-shadow: 4px 4px 11px 3px #7A0000;
+    box-shadow: 4px 4px 11px 3px $text-color2;
     padding: 15px;
 }
 
 .calculate {
-    background: #7A0000;
-    color: white;
-    border-color: #FF5C5C;
+    background: $text-color2;
+    color: $body-color2;
+    border-color: $text-color;
     font-size: 20px;
     padding: 10px;
 }
 
 .calculate:hover {
-    background-color: #FF5C5C;
-    border-color: #7A0000;
+    background-color: $text-color;
+    border-color: $text-color2;
     cursor: pointer;
 }
 
@@ -86,35 +94,37 @@ section {
 
 input {
     font-size: 20px;
-    background: white;
-    color: #7A0000;
+    background: $body-color2;
+    color: $text-color2;
     padding: 10px;
     margin: 25px;
 }
 
 input:invalid {
-    border: 2px dashed White;
+    border: 2px dashed $circle-color;
 }
 
 input:invalid:required {
-    background-image: linear-gradient(to right, white, black);
-    background-color: white;
+    background-image: linear-gradient(to right, $body-color2, $text-color);
+    background-color: $body-color;
 }
 
 input:valid {
-    border: 2px solid white;
-    background-color: #FF5C5C;
-    color: white;
+    border: 2px solid $body-color2;
+    background-color: $text-color;
+    color: $body-color2;
 }
 
 .result_image{
     width: 200px;
 }
 
+#result{
+  background-color: $black-color;
+  padding: 7px;
+}
 /*Animated heart with Heartbeat Sound*/
-$body-color: #fcc;
-$heart-color: #bd2222;
-$circle-color: #ff8a80;
+
 
 body {
  // background: $body-color;
