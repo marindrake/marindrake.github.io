@@ -137,7 +137,6 @@ body {
     justify-content: center;
     align-content: center;
     margin: 0 auto;
-    margin-top: 50px;
 
     .first-name {
       span {
@@ -251,6 +250,7 @@ body {
 #myProgress {
   width: 100%;
   background-color: $text-color;
+  margin-bottom: 20px;
 }
 
 #myBar {

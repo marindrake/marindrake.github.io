@@ -126,7 +126,6 @@ body .container2 {
   justify-content: center;
   align-content: center;
   margin: 0 auto;
-  margin-top: 50px;
 }
 body .container2 .first-name span {
   padding: 1rem;
@@ -218,6 +217,7 @@ body .container2 .heart .left-heart {
 #myProgress {
   width: 100%;
   background-color: #FF5C5C;
+  margin-bottom: 20px;
 }
 
 #myBar {
