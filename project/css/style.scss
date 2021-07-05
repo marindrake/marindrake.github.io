@@ -120,7 +120,7 @@ input:valid {
 }
 
 #result{
-  //background-color: $black-color;
+  background-color:$text-color2;
   padding: 7px;
   margin-bottom: 67px;
 }
@@ -131,7 +131,6 @@ body {
   height: 100%;
 
   .container2 {
-    //min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;

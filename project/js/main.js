@@ -66,15 +66,14 @@ function calculate() {
 
         if (percentage >= 80) {
             resulthappy.classList.remove('invisible');
-            //document.getElementById('result').style.color = "green";
+            document.getElementById('result').style.color = "white";
         } else if (percentage >= 55 && percentage < 80) {
             resultneutral.classList.remove('invisible');
-            //document.getElementById('result').style.color = "yellow";
+            document.getElementById('result').style.color = "#fcc";
         } else {
             resultnope.classList.remove('invisible');
-            //document.getElementById('result').style.color = "#bd2222";
+            document.getElementById('result').style.color = "#ff8a80";
         }
-		document.getElementById('result').style.color = "#7A0000";
         document.getElementById('result').textContent = result.result;
     }
 

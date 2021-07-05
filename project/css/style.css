@@ -111,6 +111,7 @@ input:valid {
 }
 
 #result {
+  background-color: #7A0000;
   padding: 7px;
   margin-bottom: 67px;
 }
