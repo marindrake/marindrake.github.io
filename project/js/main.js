@@ -81,10 +81,6 @@ function calculate() {
     main();
 }
 
-function tryagain() {
-    document.getElementById("myForm").reset();
-}
-
 const hover = document.querySelector(".heart");
 
 const audio = document.querySelector("audio");
