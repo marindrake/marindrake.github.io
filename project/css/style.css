@@ -66,6 +66,7 @@ p {
   border-color: #FF5C5C;
   font-size: 20px;
   padding: 10px;
+  margin: 7px;
 }
 
 .calculate:hover {
@@ -88,7 +89,7 @@ input {
   background: white;
   color: #7A0000;
   padding: 10px;
-  margin: 25px;
+  margin: 3px;
 }
 
 input:invalid {
@@ -126,6 +127,7 @@ body .container2 {
   justify-content: center;
   align-content: center;
   margin: 0 auto;
+  margin-top: 30px;
 }
 body .container2 .first-name span {
   padding: 1rem;

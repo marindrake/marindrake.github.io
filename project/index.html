@@ -22,6 +22,12 @@
             <h2>Your name</h2>
             <input id="fn" type="text" name="yourname" size="25" autofocus placeholder="Enter your name" required="required">
 
+            <h2>Your crush</h2>
+            <input  id="sn" type="text" name="yourcrush" size="25" placeholder="Enter your crush name" required="required">
+            <button class="calculate" onclick="calculate()">Calculate</button>
+            <button class="calculate" onclick="clearForm(this.form);" value="Clear">Try again</button>
+
+
             <div class="container2">
                 <div class="heart">
                   <audio>
@@ -40,15 +46,8 @@
                 <div id="myBar"></div>
               </div>
 
-            <h2>Your crush</h2>
-            <input  id="sn" type="text" name="yourcrush" size="25" placeholder="Enter your crush name" required="required">
-            <button class="calculate" onclick="calculate()">Calculate Love!</button>
-            <button class="calculate" onclick="clearForm(this.form);" value="Clear">Try again</button>
-
         </form>
 
-       
-          
         <section class="main-result">
             <h3 id="main-result-block" class="main-result-block invisible">
                 <span id="percentage"></span>

@@ -75,6 +75,7 @@ p {
     border-color: $text-color;
     font-size: 20px;
     padding: 10px;
+    margin: 7px;
 }
 
 .calculate:hover {
@@ -97,7 +98,7 @@ input {
     background: $body-color2;
     color: $text-color2;
     padding: 10px;
-    margin: 25px;
+    margin: 3px;
 }
 
 input:invalid {
@@ -136,6 +137,7 @@ body {
     justify-content: center;
     align-content: center;
     margin: 0 auto;
+    margin-top: 30px;
 
     .first-name {
       span {
