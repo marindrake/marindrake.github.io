@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,9 +7,16 @@
         <title>Love Calculator</title>
         <meta name="author" content="MARINDRAKE"/>
         <link rel="stylesheet" href="/project/css/style.css">
+        <link rel="shortcut icon" href="/project/images/favicon.png">
     </head>
     <body class="container">
-        <h1>Love Calculator</h1>
+        <header>
+            <img class="logo" src="/project/images/logo.png">
+            <div class="htitle">
+                <h1>Love Calculator</h1>
+            </div>
+        </header>
+
         <div class="info">
             <p>We all know that a name can tell a lot about a person. Names are not randomly chosen: they all have a meaning.</p>
             <p>Sometimes you'd like to know if a relationship with someone could work out. With the Love Calculator you can calculate the probability of a successful relationship between two people.</p>
@@ -23,46 +29,40 @@
             <input id="fn" type="text" name="yourname" size="25" autofocus placeholder="Enter your name" required="required">
 
             <h2>Your crush</h2>
-            <input  id="sn" type="text" name="yourcrush" size="25" placeholder="Enter your crush name" required="required">
+            <input id="sn" type="text" name="yourcrush" size="25" placeholder="Enter your crush name" required="required">
             <button class="calculate" onclick="calculate()">Calculate</button>
             <button class="calculate" onclick="clearForm(this.form);" value="Clear">Try again</button>
 
 
             <div class="container2">
                 <div class="heart">
-                  <audio>
-                    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/heartbeat.mp3"></source>
-                  </audio>
-                  <span id="percentage"></span>
-                  <div class="right-heart"></div>
-                  <div class="left-heart"></div>
-                </div>
-                <div class="last-name">
-                    <span> percentage </span>
-                  </div>
-              </div>
-    
-              <div id="myProgress">
-                <div id="myBar"></div>
-              </div>
-
-        </form>
-
-        <section class="main-result">
-            <h3 id="main-result-block" class="main-result-block invisible">
+                    <audio>
+                        <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/heartbeat.mp3"></source>
+                </audio>
                 <span id="percentage"></span>
-                <img id="happy" class="result_image invisible" src="/project/images/happy.gif">
-                <img id="neutral" class="result_image invisible" src="/project/images/neutral.gif">
-                <img id="nope" class="result_image invisible" src="/project/images/nope.gif">
-                <div><span id="result"></span></div>
-            </h3>
-        </section>
+                <div class="right-heart"></div>
+                <div class="left-heart"></div>
+            </div>
+            <div class="last-name">
+                <span>
+                    percentage
+                </span>
+            </div>
+        </div>
 
-        <footer>
-            <p class="footer-info">&copy; 2021 | Alejandro G. Marin | Information About the Love Calculator</p>
-            <p>The love test calculates the chances that your love will succeed as a percentage. Find our your chances! But remember, everything is unexpected when it comes to love and we cannot guarantee success, but often persistence is rewarded! Everyone can improve the odds of a relationship with their own behaviour!</p>
-        </footer>
-        <script src="/project/js/main.js"></script>
-
+        <div id="myProgress">
+            <div id="myBar"></div>
+        </div>
     </body>
-</html>
+</html></form><section class="main-result">
+<h3 id="main-result-block" class="main-result-block invisible">
+    <span id="percentage"></span>
+    <img id="happy" class="result_image invisible" src="/project/images/happy.gif">
+    <img id="neutral" class="result_image invisible" src="/project/images/neutral.gif">
+    <img id="nope" class="result_image invisible" src="/project/images/nope.gif">
+    <div>
+        <span id="result"></span>
+    </div>
+</h3></section><footer>
+<p class="footer-info">&copy; 2021 | Alejandro G. Marin | Information About the Love Calculator</p>
+<p>The love test calculates the chances that your love will succeed as a percentage. Find our your chances! But remember, everything is unexpected when it comes to love and we cannot guarantee success, but often persistence is rewarded! Everyone can improve the odds of a relationship with their own behaviour!</p></footer><script src="/project/js/main.js"></script></body></html>

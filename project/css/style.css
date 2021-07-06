@@ -3,11 +3,31 @@ body {
   background-color: white;
 }
 
+header {
+  background-color: #bd2222;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.logo {
+  width: 80px;
+  margin-right: 10px;
+}
+
+.htitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 h1,
 h2 {
   font-family: "Lovers Quarrel", Gadget, sans-serif;
   font-size: 65px;
-  color: #FF5C5C;
+  color: white;
   text-align: center;
   margin: 0;
 }
@@ -57,7 +77,6 @@ p {
   margin: 0 auto;
   width: 380px !important;
   box-shadow: 4px 4px 11px 3px #7A0000;
-  padding: 15px;
 }
 
 .calculate {

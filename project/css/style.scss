@@ -12,11 +12,31 @@ body {
     background-color: $body-color2;
 }
 
+header {
+  background-color: $heart-color;
+  color: $body-color2;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.logo {
+  width: 80px;
+  margin-right: 10px;
+}
+
+.htitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 h1,
 h2 {
     font-family: "Lovers Quarrel", Gadget, sans-serif;
     font-size: 65px;
-    color: $text-color;
+    color: $body-color2;
     text-align: center;
     margin: 0;
 }
@@ -66,7 +86,7 @@ p {
     margin: 0 auto;
     width: 380px !important;
     box-shadow: 4px 4px 11px 3px $text-color2;
-    padding: 15px;
+    //padding: 15px;
 }
 
 .calculate {
