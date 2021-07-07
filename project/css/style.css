@@ -65,6 +65,7 @@ footer {
   color: #7A0000;
   padding: 15px;
   font-size: 20px;
+  text-align: initial;
 }
 
 p {
@@ -95,7 +96,7 @@ p {
 }
 
 form,
-section {
+div {
   text-align: center;
 }
 
