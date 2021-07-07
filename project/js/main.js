@@ -1,8 +1,8 @@
 function calculate() {
     async function getPercentage() {
-        const inpObjfn = document.getElementById("fn");
-        const inpObjsn = document.getElementById("sn");
-        // Form Validation
+        const inpObjfn = document.getElementById("fn"); //First name entry field
+        const inpObjsn = document.getElementById("sn"); //Second entry field
+        // Form Validation. No names, no search
         if (! inpObjfn.checkValidity() || ! inpObjsn.checkValidity()) {
             document.getElementById("demo").innerHTML = inpObj.validationMessage;
         } else {
@@ -10,6 +10,7 @@ function calculate() {
             let fname = document.forms["myForm"]["yourname"].value;
             let sname = document.forms["myForm"]["yourcrush"].value;
 
+            //  add names to the search API
             const apiURL = "https://love-calculator.p.rapidapi.com/getPercentage?fname=" + fname + "&sname=" + sname;
             try {
                 let response = await fetch(apiURL, {
@@ -66,12 +67,15 @@ function calculate() {
 
         if (percentage >= 80) {
             resulthappy.classList.remove('invisible');
+            //Changing element styles with JS
             document.getElementById('result').style.color = "#7A0000";
         } else if (percentage >= 55 && percentage < 80) {
             resultneutral.classList.remove('invisible');
+            //Changing element styles with JS
             document.getElementById('result').style.color = "#bd2222";
         } else {
             resultnope.classList.remove('invisible');
+            //Changing element styles with JS
             document.getElementById('result').style.color = "#FF5C5C";
         }
         document.getElementById('result').textContent = result.result;

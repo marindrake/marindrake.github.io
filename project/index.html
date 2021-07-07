@@ -11,7 +11,7 @@
     </head>
     <body class="container">
         <header>
-            <img class="logo" src="/project/images/logo.png">
+            <img class="logo" src="/project/images/logo.png" alt="My logo">
             <div class="htitle">
                 <h1>Love Calculator</h1>
             </div>
@@ -33,36 +33,47 @@
             <button class="calculate" onclick="calculate()">Calculate</button>
             <button class="calculate" onclick="clearForm(this.form);" value="Clear">Try again</button>
 
-
+            <!-- Animated heart with Heartbeat Sound -->
             <div class="container2">
                 <div class="heart">
                     <audio>
                         <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/heartbeat.mp3"></source>
-                </audio>
-                <span id="percentage"></span>
-                <div class="right-heart"></div>
-                <div class="left-heart"></div>
-            </div>
-            <div class="last-name">
-                <span>
-                    percentage
-                </span>
-            </div>
-        </div>
+                    </audio>
 
+                    <span id="percentage"></span>
+                    <div class="right-heart"></div>
+                    <div class="left-heart"></div>
+               </div>
+                <div class="last-name">
+                    <span>
+                        percentage
+                    </span>
+                </div>
+            </div>
+            <!-- Animated heart with Heartbeat Sound -->
+        </form>
+
+        <!-- Progress Bar -->
         <div id="myProgress">
             <div id="myBar"></div>
         </div>
-    </body>
-</html></form><section class="main-result">
-<h3 id="main-result-block" class="main-result-block invisible">
-    <span id="percentage"></span>
-    <img id="happy" class="result_image invisible" src="/project/images/happy.gif">
-    <img id="neutral" class="result_image invisible" src="/project/images/neutral.gif">
-    <img id="nope" class="result_image invisible" src="/project/images/nope.gif">
+        <!-- Progress Bar -->
+
+<section class="main-result">
+    <h3 id="main-result-block" class="main-result-block invisible">
+        <span id="percentage"></span>
+        <img id="happy" class="result_image invisible" src="/project/images/happy.gif" alt="Congratulations! Good choice">
+        <img id="neutral" class="result_image invisible" src="/project/images/neutral.gif" alt="All the best!">
+        <img id="nope" class="result_image invisible" src="/project/images/nope.gif" alt="Can choose someone better.">
     <div>
         <span id="result"></span>
     </div>
-</h3></section><footer>
-<p class="footer-info">&copy; 2021 | Alejandro G. Marin | Information About the Love Calculator</p>
-<p>The love test calculates the chances that your love will succeed as a percentage. Find our your chances! But remember, everything is unexpected when it comes to love and we cannot guarantee success, but often persistence is rewarded! Everyone can improve the odds of a relationship with their own behaviour!</p></footer><script src="/project/js/main.js"></script></body></html>
+    </h3>
+</section>
+<footer>
+    <p class="footer-info">&copy; 2021 | Alejandro G. Marin | Information About the Love Calculator</p>
+    <p>The love test calculates the chances that your love will succeed as a percentage. Find our your chances! But remember, everything is unexpected when it comes to love and we cannot guarantee success, but often persistence is rewarded! Everyone can improve the odds of a relationship with their own behaviour!</p>
+</footer>
+<script src="/project/js/main.js"></script>
+</body>
+</html>
