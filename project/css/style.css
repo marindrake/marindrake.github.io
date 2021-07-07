@@ -151,14 +151,7 @@ body .container2 {
   margin: 0 auto;
   margin-top: 30px;
 }
-body .container2 .first-name span {
-  padding: 1rem;
-  font-family: "Cedarville Cursive", cursive;
-  font-size: 5rem;
-  letter-spacing: 0.15rem;
-  color: #bd2222;
-}
-body .container2 .last-name span {
+body .container2 .text-percentage span {
   padding: 1rem;
   font-family: "Cedarville Cursive", cursive;
   font-size: 1.2rem;

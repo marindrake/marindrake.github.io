@@ -87,7 +87,6 @@ p {
     margin: 0 auto;
     width: 380px !important;
     box-shadow: 4px 4px 11px 3px $text-color2;
-    //padding: 15px;
 }
 
 .calculate {
@@ -148,9 +147,8 @@ input:valid {
   font-size: 24px;
   font-weight: bold;
 }
+
 /*Animated heart with Heartbeat Sound*/
-
-
 body {
   height: 100%;
 
@@ -162,17 +160,7 @@ body {
     margin: 0 auto;
     margin-top: 30px;
 
-    .first-name {
-      span {
-        padding: 1rem;
-        font-family: "Cedarville Cursive", cursive;
-        font-size: 5rem;
-        letter-spacing: 0.15rem;
-        color: $heart-color;
-      }
-    }
-
-    .last-name {
+    .text-percentage {
       span {
         padding: 1rem;
         font-family: "Cedarville Cursive", cursive;
