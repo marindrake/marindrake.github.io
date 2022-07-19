@@ -1,0 +1,40 @@
+$body-bg: rgb(27, 27, 27);
+$body-color: white;
+$primary: rgb(0, 119, 255);
+
+$font-family-sans-serif: 'Poppins', sans-serif;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+@media (min-width: 992px) {
+.navbar-expand-1g .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    }
+}
+
+.custombg {
+    background: black url('../assets/abstract.91fe92b5.jpg');
+    background-size: cover;
+}
+
+.card {
+    border: none;
+}
+
+.card-body {
+    background: #2e2e2e;
+}
+
+.card-body p {
+    color: #c2c2c2;
+}
+
+.card-img, .card-img-top {
+    object-fit: cover;
+    aspect-ratio: 1/.7;
+}

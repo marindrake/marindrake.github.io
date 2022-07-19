@@ -1,0 +1,145 @@
+//import fonts
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+//variables
+//colors
+$main-black: #333;
+$main-grey: #666;
+$active-link: #deb887;
+$hover-link: #00ddff;
+$border: #d0d0d0;
+
+//breakpoint
+$break-small: 32.5em;
+
+//mixins
+@mixin breakpoint($break) {
+    @if $break == large {
+        @media (min-width: $small) {@content;}
+}
+@else if $break == small {
+    @media (max-width: $break-small) {@content;}
+}}
+
+p{
+    margin: 1em;
+    font-family: Helvetica, Arial, sans-serif; 
+    color: $main-black;
+}
+header{
+    margin:0;
+    padding: 0px;
+    text-align:center;
+    
+}
+h1 {
+    color: $main-black;
+    font-size: 50px;
+}
+//links
+h1 a{
+    text-decoration: none;
+    color: $main-black;
+
+&:visited {
+    color: $main-black;
+}
+h1 a:active {
+    color: $main-black;
+}
+&:hover {
+    color: $main-black;
+}}
+
+ul {
+    list-style: none;
+}
+//nav
+@mixin nav {
+    font-family:  'Lora', 'Serif';
+    border-top: 1px solid $border;
+    border-bottom: 1px solid $border;
+}
+
+//links
+nav a {
+    text-decoration: none;
+    color: $main-grey;
+    text-transform: uppercase;
+
+&:visited{
+    color: $main-grey;
+}
+&:active{
+    color: $active-link;
+}
+&:hover{
+    color: $hover-link;
+    text-decoration: underline;
+}
+}
+.post-date {
+    text-align: right;
+    font-family:  'Lora', 'Serif';
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-top: 2em;
+    border-top: 1px solid $border;
+    border-bottom: 1px solid $border;
+}
+h2 {
+    color: $main-grey;
+    margin: 1em;
+}
+h2 a:link {
+    text-decoration: none;
+    color: $main-grey;
+}
+h2 a:visited{
+    color: $main-grey;
+}
+h2 a:active{
+    color: $active-link;
+}
+h2 a:hover{
+    color: $hover-link;
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6{
+font-family:  'Lora', 'Serif';
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; 
+}
+@media only screen and (min-width: 32.5em) {
+    nav {
+            grid-column: 2/4;
+            align-items: center;
+            @include nav;
+        }
+        nav ul {
+           display: flex;
+           justify-content: flex-end;
+           padding-right: 2em;
+        }
+        nav li {
+            padding: 7px;
+        }
+        article {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        }
+        .post-date {
+            border-top: none;
+            border-bottom: none;
+            border-right: 1px solid $border;
+            padding-right: 1em;
+        }
+        .post-content {
+            border-bottom: 1px solid $border;
+        }
+}

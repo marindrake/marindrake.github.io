@@ -1,0 +1,66 @@
+//variables will follow
+//colors
+$body-background-color: darkred;
+$form-background-color: white;
+$input-color: white;
+$headlines-color : white;
+
+//breakpoint sizes
+$break-small: 576px;
+$break-large: 768px;
+
+
+body {
+    background-color: $body-background-color;
+}
+#contactform {
+    background-color: $form-background-color;
+    input, textarea {
+        background-color: $input-color;
+        flex: 2;
+    }
+    @media (min-width: $break-small) {
+       & {
+          width: 90%;
+          max-width: 700px;
+          margin-left: auto;
+          margin-right: auto; 
+        } 
+    }
+    @media (min-width: $break-large) {
+        & {
+            width: 70%;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    @mixin flex-container() {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    }
+    @mixin flex-container($axis, $wrap: nowrap) {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: $axis $wrap;
+        -ms-flex-flow: $axis $wrap;
+        flex-flow: $axis $wrap;
+    }
+    @mixin center {
+        width: 90%;
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #content {
+          @include center;
+      }
+    
+}

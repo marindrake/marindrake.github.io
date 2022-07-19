@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container {
+    height: 25vmin;
+    width: 25vmin;
+    background-color: teal;
+}
+
+.container-one {
+    padding: 1vmin;
+}
+
+/* Orbiting Circle */
+.orbiting-circle {
+    height: 25%;
+    width: 25%;
+    background-color: darkred;
+    border-radius: 50%;
+    animation: orbit 3s linear infinite;
+}
+@keyframes orbit {
+  0% { transform: translate(0,0); }
+  5% { transform: translate(0,0); } /* don't change for 5% of the time...pause */
+  25% { transform: translate(300%,0%); } /* sttart moving again */
+  30% { transform: translate(300%,0%); } /* pause*/
+  50% { transform: translate(300%,300%); } /* move */
+  55% { transform: translate(300%,300%); }
+  75% { transform: translate(0%,300%); }
+  80% { transform: translate(0%, 300%); }
+  100% { transform: translate(0%,0%); }
+}
+
+.container-two {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.morphing-circle {
+  height: 25%;
+  width: 25%;
+  background-color: darkred;
+  animation: morphing-circle-square 3s linear infinite;
+}
+
+@keyframes morphing-circle-square {
+  0% {border-radius: 50%}
+  25% {/*(if you don't add both red and circle here it will start changing one or the other before you are ready) */
+  border-radius: 50%;
+  background-color: darkred;
+  }
+  50% { /* now change to white square...but don't start rotating yet! */
+    border-radius: 0%;
+    background-color: white;
+    transform: rotate(0deg);
+  }
+  75% { /* stay a white square, but rotate 90deg */
+    border-radius: 0%;
+    background-color: white;
+    transform: rotate(90deg);
+  }
+  100% { /* stay rotated at 90, but change back to a circle */
+    border-radius: 50%;
+    background-color: darkred;
+    transform: rotate(90deg);
+  }
+}
+.container-three {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.split-circle-1 { /* creating a half circle*/
+    height: 25%;
+    width:12.5%;
+    background-color: darkred;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+    animation: split-circle-1 3s ease-in-out infinite;
+}
+.split-circle-2 { /*creating half circle 2 */
+    height: 25%;
+    width:12.5%;
+    background-color: darkred;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    animation: split-circle-2 3s ease-in-out infinite;
+}
+
+@keyframes split-circle-1 {
+    0%{ transform: translateX(0px); }
+    20%{ transform: translateX(0px); }
+    35%{ transform: translateX(-10px); }
+    45%{ transform: translateX(-10px); }
+    50%{ transform: translateX(-10px); }
+    75%{ transform: translateX(0px); }
+    100%{ transform: translate(0); }
+}
+
+@keyframes split-circle-2 {
+    0%{ transform: translateX(0px); }
+    20%{ transform: translateX(0px); }
+    35%{ transform: translateX(10px); }
+    45%{ transform: translateX(10px); }
+    50%{ transform: translateX(10px); }
+    75%{ transform: translateX(0px); }
+    100%{ transform: translate(0); }
+}
+
+.container-four{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.beating-circle {
+    height:25%;
+    width: 25%;
+    background-color: darkred;
+    border-radius: 50%;
+    animation: beating-circle 2s ease-in-out infinite;
+}
+
+@keyframes beating-circle {
+  0% { transform: scale( 1 ); }
+  20% { transform: scale( 1.25 ); }
+  40% { transform: scale( 1 ); }
+  60% { transform: scale( 1.25 ); }
+  80% { transform: scale( 1 ); }
+  100% { transform: scale( 1 ); }
+} 
