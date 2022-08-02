@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Term Project: Salmon River Adventures</title>
+    <meta name="description" content="Reservation Page." />
+    <meta name="author" content="MARINDRAKE" />
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <header>
+      <div class="left">
+        <img src="images/tlogo.png" class="logo" alt="Site logo" />
+      </div>
+      <div class="htitle">
+        <h3>Follow us</h3>
+        <div class="subtitle">
+          <p>
+            <a href="https://en-gb.facebook.com" target="_blank" rel="noopener"
+              ><img class="icon" src="images/facebook.png" alt="Facebook icon"
+            /></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener"
+              ><img class="icon" src="images/twitter.png" alt="Twitter icon"
+            /></a>
+            <a href="https://www.pinterest.com" target="_blank" rel="noopener"
+              ><img
+                class="icon"
+                src="images/pinterest.png"
+                alt="Pinterest icon"
+            /></a>
+            <a href="https://www.whatsapp.com/" target="_blank" rel="noopener"
+              ><img class="icon" src="images/whatsapp.png" alt="Whatsapp icon"
+            /></a>
+          </p>
+        </div>
+      </div>
+    </header>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="activities.html">Activities</a>
+        </li>
+        <li>
+          <a href="guide.html">River guide</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact Us</a>
+        </li>
+        <li>
+          <a href="reservation.html" class="active">Reservation</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h2 class="titletp">Take an Adventure</h2>
+      <div class="contentbox1">
+        <table>
+          <caption class="title5">
+            <h1>Whitewater rafting</h1>
+          </caption>
+          <thead>
+            <tr>
+              <th>Length</th>
+              <th>Skill level</th>
+              <th colspan="2">Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Full Day Trip
+              </td>
+              <td>
+                Class III (IV)
+              </td>
+              <td>
+                Adult $119
+              </td>
+              <td>
+                Youth $89
+              </td>
+            </tr>
+            <tr>
+              <td>
+                1/2 Day Trip
+              </td>
+              <td>
+                Class III (IV)
+              </td>
+              <td>
+                Adult $89
+              </td>
+              <td>
+                Youth $71
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="contentbox1">
+        <table>
+          <caption class="title5">
+            <h1>Kayaking</h1>
+          </caption>
+          <thead>
+            <tr>
+              <th>Length</th>
+              <th>Skill level</th>
+              <th colspan="2">Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Full 6-Day Trip
+              </td>
+              <td>
+                Class III (IV)
+              </td>
+              <td>
+                Adult $999
+              </td>
+              <td>
+                Youth $789
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="contentbox1">
+        <table>
+          <caption class="title5">
+            <h1>Fishing Trips</h1>
+          </caption>
+          <thead>
+            <tr>
+              <th>Length</th>
+              <th>Skill level</th>
+              <th>Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Full Day
+              </td>
+              <td>
+                All levels
+              </td>
+              <td>
+                $379 per boat
+              </td>
+            </tr>
+            <tr>
+              <td>
+                1/2 Day
+              </td>
+              <td>
+                All levels
+              </td>
+              <td>
+                $219 per boat
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="fcontainer">
+        <form method="get" action="thanks.html">
+          <fieldset>
+            <legend>Registration information</legend>
+            <div class="row">
+              <div class="collabel">
+                <label for="name">Full name</label>
+              </div>
+
+              <div class="colelement">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  pattern="[A-z\s]{5,}"
+                  required
+                  placeholder="Your name"
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="collabel">
+                <label for="email">Email</label>
+              </div>
+              <div class="colelement">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="someone@gmail.com"
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="collabel">
+                <label for="phone">Phone Number</label>
+              </div>
+              <div class="colelement">
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  required
+                  placeholder="123-555-1234"
+                />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Adventure information</legend>
+            <div class="row">
+              <div class="collabel">
+                <label for="sdate">Start Date</label>
+              </div>
+              <div class="colelement">
+                <input type="date" id="sdate" name="theDate" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="collabel">
+                <label for="sregion">Adventure</label>
+              </div>
+
+              <div class="colelement">
+                <select id="sregion" name="sregion">
+                  <option value="select" disabled selected
+                    >Select your Adventure ...</option
+                  >
+                  <option value="preston">Rafting</option>
+                  <option value="ssprings">Kayaking</option>
+                  <option value="fhaven">Fishing</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="collabel">
+                <label for="comments">Questions / Comments</label>
+              </div>
+              <div class="colelement">
+                <textarea
+                  name="information"
+                  id="comments"
+                  placeholder="Write something ..."
+                ></textarea>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="row">
+            <input type="submit" value="Book Now" class="submitBtn" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      Weather information provided by
+      <a class="wdate" href="http://OpenWeatherMap.org">OpenWeatherMap.org</a>
+      <br />
+      <a class="wdate"><span id="lastup"></span></a>
+    </footer>
+    <script src="js/toggleMenu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+  </body>
+</html>

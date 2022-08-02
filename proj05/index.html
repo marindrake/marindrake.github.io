@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>W11 Assignment: The Weather Site</title>
+    <meta
+      name="description"
+      content="The Weather Site Home Page"
+    />
+    <meta name="author" content="MARINDRAKE" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.png" class="logo" alt="Site logo" />
+      <div class="htitle">
+        <h1>The Blue Weather</h1>
+        <div class="subtitle">Always bring your own sunshine</div>
+      </div>
+    </header>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li>
+          <a
+            href="index.html"
+            class="active"
+            >&#127968; Home</a
+          >
+        </li>
+        <li>
+          <a href="preston.html"
+            >&#128084; Preston</a
+          >
+        </li>
+        <li>
+          <a href="sodasprings.html"
+            >&#9925; Soda Springs</a
+          >
+        </li>
+        <li>
+          <a href="fishhaven.html"
+            >&#x1F3A3; Fish Haven</a
+          >
+        </li>
+        <li>
+          <a href="stormcenter.html"
+            >&#127754; Storm Center</a
+          >
+        </li>
+        <li>
+          <a href="gallery.html"
+            >&#127748; Gallery</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h2 class="titletp">Home Page</h2>
+      <div class="cards"></div>
+      <article>
+        <img src="images/preston2.jpg" alt="Preston">
+        <div class="data">
+          <h2 class="townname">Preston</h2>
+          <p class="townmotto">Is a city in Franklin County, Idaho, United States. The population was 5,204 at the 2010 census. The city is the county seat of Franklin County. It is part of the Logan, Utah-Idaho Metropolitan Statistical Area.</p>
+        </div>
+      </article>
+        <article>
+          <img src="images/fishhaven2.jpg" alt="Fishhaven">
+          <div class="data">
+            <h2 class="townname">Fish Haven</h2>
+            <p class="townmotto">Originally named Rush Creek, is an unincorporated community along the shores of Bear Lake in Bear Lake County, Idaho, United States. It is 4 km (2.5 miles) north of the Utah border.<br> 
+            <br>The first settlement at Fish Haven was made in 1864. A post office called Fish Haven was established in 1867, and remained in operation until 1962. The community was so named because nearby Bear Lake is a favorite fishing spot.</p>
+          </div>
+        </article>
+        <article>
+          <img src="images/sodasprings2.jpg" alt="Soda Springs">
+          <div class="data">
+            <h2 class="townname">Soda Springs</h2>
+            <p class="townmotto">Is a city in Caribou County, Idaho, United States. Its population was 3,058 at the 2010 census.<br>
+            <br>The city has been the county seat of Caribou County since the county was organized in 1919. In the 1860s, Soda Springs served as the seat of Oneida County.</p>
+          </div>
+        </article>
+      
+    </main>
+    <footer>
+      &copy; The Blue Weather | Weather
+      information provided by
+      <a class="wdate" href="http://OpenWeatherMap.org">OpenWeatherMap.org</a> | Alejandro G. Marin 
+      <br />
+      <a class="wdate"><span id="lastup"></span></a>
+      <script src="js/update.js"></script>
+    </footer>
+    <script src="js/toggleMenu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/town.js"></script>
+  </body>
+</html>

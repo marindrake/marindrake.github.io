@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Term Project: Salmon River Adventures</title>
+    <meta name="description" content="Activities Page." />
+    <meta name="author" content="MARINDRAKE" />
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <header>
+      <div class="left">
+        <img src="images/tlogo.png" class="logo" alt="Site logo" />
+      </div>
+      <div class="htitle">
+        <h3>Follow us</h3>
+        <div class="subtitle">
+          <p>
+            <a href="https://en-gb.facebook.com" target="_blank" rel="noopener"
+              ><img class="icon" src="images/facebook.png" alt="Facebook icon"
+            /></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener"
+              ><img class="icon" src="images/twitter.png" alt="Twitter icon"
+            /></a>
+            <a href="https://www.pinterest.com" target="_blank" rel="noopener"
+              ><img
+                class="icon"
+                src="images/pinterest.png"
+                alt="Pinterest icon"
+            /></a>
+            <a href="https://www.whatsapp.com/" target="_blank" rel="noopener"
+              ><img class="icon" src="images/whatsapp.png" alt="Whatsapp icon"
+            /></a>
+          </p>
+        </div>
+      </div>
+    </header>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="activities.html" class="active">Activities</a>
+        </li>
+        <li>
+          <a href="guide.html">River guide</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact Us</a>
+        </li>
+        <li>
+          <a href="reservation.html">Reservation</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h2 class="titletp">Adventure trip / Activities</h2>
+      <section class="teamsection">
+        <img src="images/trafting2.jpg" class="teamphoto" alt="Rafting" />
+        <div class="carddiv">
+          <h2 class="teamname">
+            Whitewater rafting
+          </h2>
+          <p class="teaminfo">
+            Full Day Trip | Class III (IV) | Adult - $119/Youth - $89
+          </p>
+          <p class="teaminfo">
+            1/2 Day Trip | Class III (IV) | Adult - $89/Youth - $71
+          </p>
+          <p class="teambio">
+            The Salmon River provides an ideal experience for first-timers or
+            else those looking for the more mellow experience. Your guide can
+            take alternate, more easygoing lines, or depending on the time of
+            year, we may choose one of the many other sections of the Salmon to
+            float. Regardless, this whitewater trip is great for any and all,
+            the thrill-tempered-traveler and the swashbuckling Braveheart.
+          </p>
+          <p class="teambio">
+            On our trip you can choose to ride in a raft, paddle in a raft, or
+            paddle an inflatable kayak for those looking for the bigger
+            adventure. The choice is up to you!
+          </p>
+        </div>
+      </section>
+      <section class="teamsection">
+        <img src="images/tkayaking2.jpg" class="teamphoto" alt="Kayaking" />
+        <div class="carddiv">
+          <h2 class="teamname">
+            Kayaking
+          </h2>
+          <p class="teaminfo">
+            Full 6-Day Trip | Class III (IV) | Adult - $999/Youth - $789
+          </p>
+          <p class="teambio">
+            We offer guided inflatable kayaking trips, single, half, and
+            multi-day inflatable kayaking adventures on the Salmon River. On
+            these unique trips, you get the chance to paddle yourself through
+            the throws and thrills of the Salmon River's rapids and to float
+            stretched-out and feet-up in the its calm pools.
+          </p>
+          <p class="teambio">
+            Guides paddling their own inflatable kayaks will help teach you the
+            basics and then lead you "follow-the-leader" style through the
+            rapids. If you should fall out: no problem; the guides will be right
+            there to pick you up. It's all part of the fun. So, the question is:
+            are you a "do-it-yourselfer"? Looking for a little more adventure?
+            Well here is your chance to sit above the rapids, hear their roar,
+            and power your way down through the waves on your own.
+          </p>
+        </div>
+      </section>
+      <section class="teamsection">
+        <img src="images/tfishing2.jpg" class="teamphoto" alt="Fishing" />
+        <div class="carddiv">
+          <h2 class="teamname">
+            Fishing Trips
+          </h2>
+          <p class="teaminfo">
+            Full Day Trip | All levels | $379 per boat
+          </p>
+          <p class="teaminfo">
+            1/2 Day Trip | All levels | $219 per boat
+          </p>
+          <p class="teambio">
+            The Salmon River is one of the country's most famous fisheries,
+            including Chinook Salmon and Steelhead Trout. All of our Steelhead
+            Fishing Trips set out on heated, dory-style drift boats, and are led
+            by our truly peerless guides.
+          </p>
+          <p class="teambio">
+            Whether a first-timer or master-angler, fly or spin fisher, we have
+            the experience and expert guidance, not to mention the custom
+            driftboat, to find you the fish you're looking for. All trips
+            include: heated drift boats, guide, shuttles, homemade snacks, hot
+            and cold drinks, all equipment, and a delicious riverside lunch.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      Weather information provided by
+      <a class="wdate" href="http://OpenWeatherMap.org">OpenWeatherMap.org</a>
+      <br />
+      <a class="wdate"><span id="lastup"></span></a>
+    </footer>
+    <script src="js/toggleMenu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+  </body>
+</html>

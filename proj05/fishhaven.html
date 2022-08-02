@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>W11 Assignment: The Weather Site - Fish Haven</title>
+    <meta name="description" content="Fish Haven Page." />
+    <meta name="author" content="MARINDRAKE" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <aside>
+      <div class="banner">
+        <h2>
+          Saturday = Preston Pancakes in the Park!<br />
+          9:00 a.m. Saturday at the city Park.
+        </h2>
+      </div>
+    </aside>
+    <header>
+      <img src="images/logo.png" class="logo" alt="Site logo" />
+      <div class="htitle">
+        <h1>The Blue Weather</h1>
+        <div class="subtitle">Always bring your own sunshine</div>
+      </div>
+    </header>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li>
+          <a href="index.html"
+            >&#127968; Home</a
+          >
+        </li>
+        <li>
+          <a href="preston.html"
+            >&#128084; Preston</a
+          >
+        </li>
+        <li>
+          <a href="sodasprings.html"
+            >&#9925; Soda Springs</a
+          >
+        </li>
+        <li>
+          <a
+            href="fishhaven.html"
+            class="active" id="city"
+            >Fish Haven</a
+          >
+        </li>
+        <li>
+          <a href="stormcenter.html"
+            >&#127754; Storm Center</a
+          >
+        </li>
+        <li>
+          <a href="gallery.html"
+            >&#127748; Gallery</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Fish Haven, Idaho</h2>
+      <div class="herodiv">
+        <img
+          src="images/fhero.jpg"
+          srcset="
+            images/fhero1100.jpg 1100w,
+            images/fhero800.jpg   800w,
+            images/fhero500.jpg   500w
+          "
+          sizes="(max-width: 1300px) 50vw, 100vw"
+          alt="Hero"
+        />
+
+        <section class="stats">
+          <h2>Weather Summary</h2>
+          <p>Currently: <span id="currently"></span></p>
+          <p>Temperature: <span id="current-temp"></span></p>
+          <p>Wind Chill: <span id="windchill"></span></p>
+          <p>Humidity: <span id="humidity"></span></p>
+          <p>Wind Speed: <span id="wind-speed"></span></p>
+        </section>
+      </div>
+
+      <div class="contentbox1">
+        <table>
+          <caption class="title5">5 Day Forecast</caption>
+          <thead>
+            <tr>
+              <th id="day1">day1</th>
+              <th id="day2">day2</th>
+              <th id="day3">day3</th>
+              <th id="day4">day4</th>
+              <th id="day5">day5</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img id="icon1" src="#" alt="#" class="imgstyle" /><span
+                  id="forecast1"
+                ></span>
+              </td>
+              <td>
+                <img id="icon2" src="#" alt="#" class="imgstyle" /><span
+                  id="forecast2"
+                ></span>
+              </td>
+              <td>
+                <img id="icon3" src="#" alt="#" class="imgstyle" /><span
+                  id="forecast3"
+                ></span>
+              </td>
+              <td>
+                <img id="icon4" src="#" alt="#" class="imgstyle" /><span
+                  id="forecast4"
+                ></span>
+              </td>
+              <td>
+                <img id="icon5" src="#" alt="#" class="imgstyle" /><span
+                  id="forecast5"
+                ></span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="contentbox3">
+        <section>
+          <h2 class="events">Upcoming Events</h2>
+          <div class="eventdiv"></div>
+        </section>
+      </div>
+      <div class="contentbox2">
+        <div class="wrapper">
+          <div class="box">
+            <img src="images/narnia.jpg" class="hero" alt="Flu" />
+          </div>
+
+          <h3>
+            'Welcome to Narnia': Frozen homes near Lake Erie are an eerie sight
+          </h3>
+          <h4>By Mindy Weisberger - Senior Writer</h4>
+
+          <p>
+            Winter's chill recently turned Lake Erie into "Lake Eerie," as
+            frigid temperatures transformed a trio of lakeside houses in
+            Hamburg, New York, into unsettling ice sculptures. The frigid cold
+            and wind sealed the homes inside thick layers of solid ice, topped
+            with still more frozen layers of wavy icicle "hair."
+            <br /><br />Beginning on Feb. 27 and continuing for 48 hours, winds
+            gusted over Lake Erie at speeds up to 60 mph (97 km/h), driving lake
+            water inland to the Hoover Beach neighborhood, AccuWeather reported
+            ... <a href="https://www.foxnews.com/science/welcome-to-narnia-frozen-homes-near-lake-erie-are-an-eerie-sight" target="_blank" rel="noopener">continue to full article</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="contentbox3">
+        <iframe title="Fish Haven, Idaho MAP" class="box2" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d23709.341876032373!2d-111.427699!3d42.0288598!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish%20Haven%2C%20ID%2083287!5e0!3m2!1sen!2sus!4v1583984722960!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>        
+        <div class="wrapper2">
+          <h3>The Best Weather</h3>
+          <p>
+            &#128205; 30 N 1st E<br />
+            Preston, ID 83263
+          </p>
+          <p>&#128222; 999.999.9999</p>
+          <p>&#128231; thebestweather@tbw.com</p>
+          <p>
+            <a href="https://en-gb.facebook.com" target="_blank" rel="noopener"
+              ><img class="icon" src="images/facebook.png" alt="Facebook icon"
+            /></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener"
+              ><img class="icon" src="images/twitter.png" alt="Twitter icon"
+            /></a>
+            <a href="https://www.pinterest.com" target="_blank" rel="noopener"
+              ><img class="icon" src="images/pinterest.png" alt="Pinterest icon"
+            /></a>
+            <a href="https://www.whatsapp.com/" target="_blank" rel="noopener"
+              ><img class="icon" src="images/whatsapp.png" alt="Whatsapp icon"
+            /></a>
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      &copy; The Blue Weather | Weather
+      information provided by
+      <a class="wdate" href="http://OpenWeatherMap.org">OpenWeatherMap.org</a> | Alejandro G. Marin 
+      <br />
+      <a class="wdate"><span id="lastup"></span></a>
+      <script src="js/update.js"></script>
+    </footer>
+    <script src="js/banner.js"></script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/fweatherapi.js"></script>
+  </body>
+</html>

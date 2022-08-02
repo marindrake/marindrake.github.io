@@ -1,0 +1,118 @@
+  /* 35em is also 560px when basefont is 16px */
+  @media only screen and (min-width: 35rem) {
+
+      /*Gallery*/
+      .container {
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 0px;
+      }
+
+      .norm {
+          border-radius: 0px;
+          width: 100%;
+          height: 100px;
+          object-fit: cover;
+          max-width: 100%;
+      }
+
+      figcaption {
+          font-size: small;
+      }
+
+      /*END Gallery*/
+
+      /*MENU*/
+      nav button {
+          display: none;
+      }
+
+      nav ul.hide {
+          display: flex;
+          justify-content: space-evenly;
+      }
+
+      nav ul {
+          justify-content: space-evenly;
+
+      }
+
+      nav ul il {
+          flex: 1 1 100%;
+      }
+
+      nav ul li a {
+          border: none;
+          padding: .6rem 1rem;
+      }
+
+      /*END Menu*/
+
+      /*Visible*/
+
+      .box2 {
+          display: block;
+      }
+
+      .contentbox1 {
+          display: block;
+      }
+
+      /*END Visible*/
+      .box {
+          max-width: 75%;
+      }
+
+      .collabel {
+          width: 40%;
+          text-align: right;
+          vertical-align: top;
+      }
+
+      .colelement {
+          width: 35%;
+          display: inline-block;
+      }
+
+      input[type=submit] {
+          max-width: 8rem;
+      }
+
+      form {
+          max-width: 450px;
+          margin: auto;
+      }
+
+      textarea {
+          width: 170%;
+      }
+
+      /*CARDS*/
+      .cards {
+          display: flex;
+          flex-wrap: wrap;
+      }
+
+      .townsection {
+          display: flex;
+          width: 95%;
+          margin: auto;
+          padding: 5px 5px;
+          margin-bottom: 20px;
+      }
+
+      .townsection:nth-child(even) {
+          flex-direction: row-reverse;
+      }
+
+      .townsection div {
+          margin: auto;
+      }
+
+      .townphoto {
+          width: 50%;
+      }
+
+      /*END CARDS*/
+  }
+
+  /*end medium*/

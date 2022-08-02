@@ -1,0 +1,121 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 75rem) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 15px;
+    }
+
+    figure {
+        margin: 0;
+    }
+
+    figcaption {
+        font-size: smaller;
+    }
+
+    .norm {
+        max-width: 100%;
+    }
+
+    /* hover effect */
+    .norm:hover {
+        box-shadow: 0 0 20px #333;
+        border-radius: 0px;
+    }
+
+    /*Menu*/
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    nav ul {
+        justify-content: space-evenly;
+
+    }
+
+    nav ul il {
+        flex: 1 1 100%;
+    }
+
+    nav ul li a {
+        border: none;
+        padding: .6rem 1rem;
+    }
+
+    main picture {
+        display: block;
+    }
+
+    main picture img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #bbb;
+    }
+
+    /*END Menu*/
+    .box {
+        max-width: 210px;
+        float: right;
+        margin: 19px;
+    }
+
+    /*Visible*/
+
+    .box2 {
+        display: block;
+    }
+
+    .contentbox1 {
+        display: block;
+    }
+
+    /*END Visible*/
+
+    input[type=submit] {
+        align-items: center;
+        max-width: 8rem;
+    }
+    
+    /*CARDS*/
+    .cards {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .townname {
+        font-size: 28px;
+    }
+
+    .townmotto {
+        font-size: 13px;
+    }
+
+    .townsection {
+        display: block;
+    }
+
+    .townsection div {
+        height: 165px;
+    }
+
+    .townphoto {
+        width: 100%;
+    }
+
+    /*END CARDS*/
+    article {
+        display: flex;
+    }
+
+    footer{
+        font-size: 1rem;
+    }
+}
+
+/*end large*/

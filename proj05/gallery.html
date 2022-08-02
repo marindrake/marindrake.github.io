@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>W11 Assignment: The Weather Site - Weather Gallery</title>
+    <meta
+      name="description"
+      content="Weather Gallery Page."
+    />
+    <meta name="author" content="MARINDRAKE" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.png" class="logo" alt="Site logo" />
+      <div class="htitle">
+        <h1>The Blue Weather</h1>
+        <div class="subtitle">Always bring your own sunshine</div>
+      </div>
+    </header>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li>
+          <a
+            href="index.html"
+            >&#127968; Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="preston.html"
+            >&#128084; Preston</a
+          >
+        </li>
+        <li>
+          <a href="sodasprings.html"
+            >&#9925; Soda Springs</a
+          >
+        </li>
+        <li>
+          <a href="fishhaven.html"
+            >&#x1F3A3; Fish Haven</a
+          >
+        </li>
+        <li>
+        <li>
+          <a href="stormcenter.html">&#127754; Storm Center</a>
+        </li>
+        <li>
+          <a
+            href="gallery.html"
+            class="active"
+            >&#127748; Gallery</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Weather Gallery</h2>
+      <div class="container">
+        <figure>
+          <img
+            class="norm"
+            src="images/thunderstorm300x400t.jpg"
+            data-src="images/thunderstorm300x400.jpg"  
+            alt="Thunderstorm with dark clouds"
+          />
+          <figcaption>Thunderstorm with dark clouds</figcaption>
+        </figure>
+        <figure>
+          <img
+          class="norm"
+            src="images/rain300x400t.jpg"
+            data-src="images/rain300x400.jpg"
+            alt="Water drops"
+          />
+          <figcaption>Water drops</figcaption>
+        </figure>
+        <figure>
+          <img
+          class="norm"
+            src="images/sunny300x400t.jpg"
+            data-src="images/sunny300x400.jpg"
+            alt="Mountains under blue and white sky"
+          />
+          <figcaption>Mountains under blue and white sky</figcaption>
+        </figure>
+        <figure>
+          <img 
+          class="norm"
+            src="images/snow300x400t.jpg"
+            data-src="images/snow300x400.jpg"
+            alt="Low angle photo of snow field"
+          />
+          <figcaption>Low angle photo of snow field</figcaption>
+        </figure>
+        <figure>
+          <img
+          class="norm"
+            src="images/cloud300x400t.jpg"
+            data-src="images/cloud300x400.jpg"
+            alt="Clouds and forest trees"
+          />
+          <figcaption>Clouds and forest trees</figcaption>
+        </figure>
+        <figure>
+          <img
+          class="norm"
+            src="images/wave300x400t.jpg"
+            data-src="images/wave300x400.jpg"
+            alt="Huge wave at daytime"
+          />
+          <figcaption>Huge wave at daytime</figcaption>
+        </figure>
+        <figure>
+          <img
+          class="norm"
+            src="images/trees300x400t.jpg"
+            data-src="images/trees300x400.jpg"
+            alt="Mountains and trees"
+          />
+          <figcaption>Mountains and trees</figcaption>
+        </figure>
+        <figure>
+          <img
+          class="norm"
+            src="images/sunset300x400t.jpg"
+            data-src="images/sunset300x400.jpg"
+            alt="Trees under cloudy sky during sunset"
+          />
+          <figcaption>Trees under cloudy sky during sunset</figcaption>
+        </figure>
+        <figure>
+          <img
+          class="norm"
+            src="images/brown300x400t.jpg"
+            data-src="images/brown300x400.jpg"
+            alt="Brown mountain"
+          />
+          <figcaption>Brown mountain</figcaption>
+        </figure>
+      </div>
+    </main>
+    <footer>
+      &copy; The Blue Weather | Weather
+      information provided by
+      <a class="wdate" href="http://OpenWeatherMap.org">OpenWeatherMap.org</a> | Alejandro G. Marin 
+      <br />
+      <a class="wdate"><span id="lastup"></span></a>
+      <script src="js/update.js"></script>
+    </footer>
+    <script src="js/toggleMenu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/imagehandling.js"></script>
+  </body>
+</html>

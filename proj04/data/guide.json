@@ -1,0 +1,36 @@
+{
+    "team": [
+      {
+        "name": "Will Stone",
+        "photo": "twillphoto.jpg",
+        "level": "He spends most of his time climbing, fishing, and rafting.",
+        "years": "5",
+        "email": "willstone@comcast.net",
+        "biography": "Will is a great fly fisherman and an incredible storyteller. After working for a couple years in Natural Resources."
+      },
+      {
+        "name": "Megan Carter",
+        "photo": "tmeganphoto.jpg",
+        "level": "Degree in Natural Resources Management.",
+        "years": "3",
+        "email": "megancarter@aol.com",
+        "biography": "She has a great attitude and a love for the outdoors. Her laugh is contagious and she seems to make everyone around her have more fun."
+      },
+      {
+        "name": "David Jones",
+        "photo": "tdavidphoto.jpg",
+        "level": "His outgoing personality coupled with his knowledge of the area makes for a great river guide.",
+        "years": "4",
+        "email": "davidjones@gmail.com",
+        "biography": "A native of Idaho and was kayaking and rafting on the Salmon river with his family since childhood."
+      },
+      {
+        "name": "Chris Keen",
+        "photo": "tchrisphoto.jpg",
+        "level": "He’s an Idaho native, raised on the Salmon River.",
+        "years": "8",
+        "email": "chriskeen@yahoo.com",
+        "biography": "Hi loves Idaho’s rivers, history, and beauty gives guests a unique perspective on how special the Idaho Wilderness."
+      }
+    ]
+  }

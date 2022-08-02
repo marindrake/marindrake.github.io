@@ -2,6 +2,8 @@ const links = [
   { label: 'Love Calculator', url: 'proj01/index.html', }, // you can add other tags if you like
   { label: 'Temple Inn & Suites', url: 'proj02/index.html', },
   { label: 'Wedding Planners', url: 'proj03/index.html', },
+  { label: 'Salmon River Adventures', url: 'proj04/index.html', },
+  { label: 'The Blue Weather', url: 'proj05/index.html', },
   ];
 
   var list = document.getElementsByTagName('ol');

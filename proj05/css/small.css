@@ -1,0 +1,747 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Sansita", Ubuntu, sans-serif;
+}
+
+footer {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#73a3cf+0,00203e+100 */
+    background: #73a3cf;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #73a3cf 0%, #00203e 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #73a3cf 0%, #00203e 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #73a3cf 0%, #00203e 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#73a3cf', endColorstr='#00203e', GradientType=0);
+    /* IE6-9 */
+
+    font-size: .85rem;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+header {
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#73a3cf+0,0057a8+100 */
+    background: #73a3cf;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #73a3cf 0%, #0057a8 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #73a3cf 0%, #0057a8 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #73a3cf 0%, #0057a8 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#73a3cf', endColorstr='#0057a8', GradientType=0);
+    /* IE6-9 */
+
+
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+header,
+nav {
+    width: 100%;
+}
+
+main,
+footer {
+    max-width: 767px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 100px;
+    margin-right: 10px;
+    height: 100px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: "Rock Salt", Gadget, sans-serif;
+    margin: 6.1px;
+}
+
+h2 {
+    color: #010a8b;
+    text-align: center;
+    padding: 5px;
+}
+
+.title5 {
+    color: #010a8b;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+h3 {
+    text-align: center;
+    color: #010a8b;
+    font-size: .85rem;
+}
+
+h4 {
+    text-align: center;
+    color: #8C0A03;
+    font-size: .85rem;
+}
+
+/*Menu*/
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.25rem;
+    color: deepskyblue;
+    width: 90%;
+}
+
+nav {
+    background-color: black;
+    font-family: "Sansita", Ubuntu, sans-serif;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    max-width: 900px;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: 0.75rem;
+    font-size: 0.95rem;
+    font-family: "Sansita", Ubuntu, sans-serif;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+.active {
+    color: yellow;
+    background-color: #8C0A03;
+}
+
+nav ul li a:hover {
+    background-color: #2E5B85;
+
+}
+
+/*END Menu*/
+main {
+    font-size: 0.8rem;
+}
+
+main picture {
+    display: none;
+    margin: 0.5rem;
+}
+
+.wdate {
+    color: yellow;
+}
+
+.colorimg {
+    width: 100%;
+    border: 3px solid #000;
+    margin: inherit;
+}
+
+p {
+    color: black;
+    font-size: .85rem;
+}
+
+.subtitle {
+    color: yellow;
+    font-family: "Shadows Into Light", Verdana, Geneva;
+    padding-bottom: 10px;
+}
+
+/*Banner*/
+aside {
+    background-color: yellow;
+    text-align: center;
+}
+
+/*End Banner*/
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+/* Gallery */
+.container {
+    margin: 1rem auto;
+    display: grid;
+    text-align: center;
+}
+
+figcaption {
+    font-size: medium;
+    margin: inherit;
+}
+
+.norm {
+    border-radius: 20px;
+    max-width: 75%;
+}
+
+/* END Gallery */
+
+
+figure img[data-src] {
+    filter: blur(0.2em);
+}
+
+figure img {
+    border: 1px solid #333;
+    padding: 5px;
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+.htitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*Overlay*/
+.hero {
+    max-width: 100%;
+    height: auto;
+    border: 7px solid;
+    border-color: dodgerblue;
+}
+
+.hero2 {
+    max-width: 100%;
+    border: 7px solid;
+    border-color: darkgreen;
+}
+
+.herodiv {
+    margin: 10px auto;
+    position: relative;
+}
+
+h2,
+p {
+    margin-top: 7px;
+    margin-right: 7px;
+    margin-left: 7px;
+    margin-bottom: 7px;
+}
+
+.stats {
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    background: radial-gradient(#eee, #73A3CF);
+    border: 1px solid #000;
+    padding-top: 0rem;
+    padding-right: 0rem;
+    padding-left: 0rem;
+    padding-bottom: 0rem;
+    box-shadow: 0 0 30px cornflowerblue;
+    opacity: .8;
+}
+
+.herodiv h2 {
+    border-bottom: solid;
+}
+
+/*END Overlay*/
+
+/*Content*/
+
+.contentbox1 {
+    max-width: 441px;
+    display: block;
+    margin: 10px auto;
+    padding: 15px;
+    color: #9B0B03;
+    font-family: "Acme", Ubuntu, sans-serif;
+    font-size: 1rem;
+}
+
+.contentbox2 {
+    max-width: 730px;
+    background-color: rgb(247, 247, 212);
+    display: block;
+    margin: 10px auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: #9B0B03;
+    font-family: "Acme", Ubuntu, sans-serif;
+    font-size: 1rem;
+}
+
+.contentbox3 {
+    background-color: #FEEEAD;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 0px;
+    color: #9B0B03;
+    font-family: "Acme", Ubuntu, sans-serif;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+/*END Content*/
+
+/*Table*/
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    flex: 1 1 100%;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #333;
+    background-color: white;
+    font-size: 13px;
+    text-align: center;
+}
+
+.flex div:last-child {
+    border-right: 1px solid #333;
+}
+
+.label {
+    display: block;
+    padding: 5px;
+    font-weight: 700;
+    font-size: 15px;
+    border-bottom: 1px solid #333;
+    background-color: #FEEEAD;
+}
+
+.flex div img,
+table img {
+    padding: 5px;
+    max-width: 25px;
+}
+
+.data {
+    display: block;
+    padding: 0 5px 5px;
+}
+
+/*END Table*/
+
+/*No Visible*/
+
+.box2 {
+    display: none;
+}
+
+.contentbox1 {
+    display: none;
+}
+
+/*END No Visible*/
+
+/*Article*/
+.wrapper {
+    padding: 10px;
+    color: #fff;
+    display: flow-root;
+}
+
+.box {
+    margin: auto;
+    width: 65%;
+    border-radius: 5px;
+   /* padding: .5em;*/
+}
+
+.box2 {
+    width: 400px;
+    height: 250px;
+    border-radius: 5px;
+    padding: .5em;
+}
+
+.wrapper2 {
+    text-align: center;
+    color: #fff;
+    display: flow-root;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    margin: -2px;
+}
+
+main div.herodiv img {
+    width: 100%;
+}
+
+.banner h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+
+.container {
+    display: grid;
+    grid-gap: .5rem;
+    /* align-items: center;
+    width: 400px;*/
+}
+
+.thanks {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Rock Salt", Gadget, sans-serif;
+    color: black;
+}
+
+/* Responsive Form*/
+
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    height: 100px;
+}
+
+label {
+    color: black;
+    padding: 12px 12px 12px 0;
+}
+
+input[type=submit] {
+    background-color: #010a8b;
+    color: white;
+    padding: .75rem 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    float: right;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+}
+
+input[type=submit]:hover {
+    background-color: darkgreen;
+}
+
+.fcontainer {
+    border-radius: 5px;
+    font-family: "Acme", Ubuntu, sans-serif;
+    font-size: .85rem;
+}
+
+.collabel {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.colelement {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+fieldset {
+    background-color: rgba(227, 245, 255, 0.959);
+    border: 1px solid #ccc;
+}
+
+.collabel,
+.colelement,
+input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+}
+
+input:focus {
+    box-shadow: 0 0 10px rgb(88, 161, 204);
+}
+
+input:required {
+    background-color: rgb(252, 252, 230);
+    color: #000;
+    border-left: red solid 6px;
+}
+
+input:required:valid {
+    border-left: green solid 6px;
+}
+
+input,
+select {
+    padding: 0.5rem;
+    margin-bottom: .35rem;
+}
+
+form {
+    max-width: 300px;
+    margin: auto;
+}
+
+form fieldset {
+    margin: 1rem 0;
+    border: 1px solid dodgerblue;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: darkblue;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-family: "Sansita", Ubuntu, sans-serif;
+    font-size: medium;
+}
+
+/* END Responsive Form*/
+
+.rred {
+    color: red;
+    margin: -10px;
+}
+
+.contentbox4 {
+    margin: 50px auto;
+    padding: 50px;
+}
+
+/*CARDS*/
+.titletp {
+    font-size: 1.6rem;
+}
+
+main {
+    /*  padding: 10px;*/
+    margin: 0 auto;
+    /*  background-color: rgba(227, 245, 255, 0.959);*/
+}
+
+.townname {
+    font-family: "Acme", Ubuntu, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    color: #002050;
+    font-weight: bold;
+}
+
+.townmotto {
+    font-family: "Sansita", Ubuntu, sans-serif;
+    font-size: 1.5rem;
+    padding: 5px;
+    margin: 0;
+    color: black;
+    font-weight: bold;
+}
+
+.towninfo {
+    margin: 3px;
+    font-size: 12px;
+    font-family: "Roboto", Ubuntu, sans-serif;
+    padding: 3px;
+    margin: 3px;
+    font-size: 13px;
+    color: black;
+}
+
+.townphoto {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+    box-shadow: 0 0 20px black;
+}
+
+.townsection {
+    display: block;
+    margin: 2px;
+    padding-bottom: 10px;
+    border: 1px black solid;
+    background-color: #73a3cf;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .85);
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.cards section:hover {
+    background-color: whitesmoke;
+}
+
+.cards {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+/*END CARDS*/
+
+article {
+    max-width: 800px;
+    margin: .5rem auto;
+    background-color: #73a3cf;
+    flex-wrap: wrap;
+    display: none;
+}
+
+article:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+article img {
+    border: 6px solid #002050;
+    width: 50%;
+    height: auto;
+}
+
+.data {
+    background-color: #73a3cf;
+    color: black;
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+}
+
+.htitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*Table*/
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    flex: 1 1 100%;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #333;
+    background-color: white;
+    font-size: 13px;
+    text-align: center;
+}
+
+.flex div:last-child {
+    border-right: 1px solid #333;
+}
+
+.label {
+    display: block;
+    padding: 5px;
+    font-weight: 700;
+    font-size: 15px;
+    border-bottom: 1px solid #333;
+    background-color: #FEEEAD;
+}
+
+.flex div img,
+table img {
+    padding: 5px;
+    max-width: 25px;
+}
+
+.data {
+    display: block;
+    padding: 0 5px 5px;
+}
+
+/*END Table*/
+
+/*TABLE*/
+.contentbox1 td {
+    font-size: 15px;
+    text-align: center;
+}
+
+.contentbox1 th {
+    background: #FEEEAD;
+}
+
+.contentbox1 table,
+td,
+th {
+    padding: 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.imgstyle {
+    max-width: 50px;
+}
+
+/*END Table*/
+
+/*No Visible*/
+
+.box2 {
+    display: none;
+    box-shadow: 5px 5px 10px rgba(219, 162, 5, 0.85);
+}
+
+.contentbox1 {
+    display: none;
+}
+
+.tforecast {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*END No Visible*/
+.events {
+    border-bottom: 2.5px solid #8C0A03;
+    font-size: 1.2rem;
+}
+
+.eventlist {
+    color: black;
+}

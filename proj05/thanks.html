@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>W11 Assignment: The Weather Site - Thanks</title>
+    <meta
+      name="description"
+      content="This page expresses gratitude for filling out the form."
+    />
+    <meta name="author" content="MARINDRAKE" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.png" class="logo" alt="Site logo" />
+      <div class="htitle">
+        <h1>The Blue Weather</h1>
+        <div class="subtitle">Always bring your own sunshine</div>
+      </div>
+    </header>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li>
+          <a
+            href="index.html"
+            >&#127968; Home</a
+          >
+        </li>
+        <li>
+          <a href="preston.html"
+            >&#128084; Preston</a
+          >
+        </li>
+        <li>
+          <a href="sodasprings.html"
+            >&#9925; Soda Springs</a
+          >
+        </li>
+        <li>
+          <a href="fishhaven.html"
+            >&#x1F3A3; Fish Haven</a
+          >
+        </li>
+        <li>
+          <a
+            href="stormcenter.html"
+            class="active"
+            >&#127754; Storm Center</a
+          >
+        </li>
+        <li>
+          <a href="gallery.html"
+            >&#127748; Gallery</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="contentbox4">
+      <h2 class="thanks">Thanks!</h2>
+      <h2>You successfully submitted the form.</h2>
+      </div>
+    </main>
+    <footer>
+      &copy; The Blue Weather | Weather
+      information provided by
+      <a class="wdate" href="http://OpenWeatherMap.org">OpenWeatherMap.org</a> | Alejandro G. Marin 
+      <br />
+      <a class="wdate"><span id="lastup"></span></a>
+      <script src="js/update.js"></script>
+    </footer>
+    <script src="js/toggleMenu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/imagehandling.js"></script>
+  </body>
+</html>

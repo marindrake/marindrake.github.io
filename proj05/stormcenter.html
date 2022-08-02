@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>W11 Assignment: The Weather Site - Storm Center</title>
+    <meta
+      name="description"
+      content="Storm Center Page"
+    />
+    <meta name="author" content="MARINDRAKE" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.png" class="logo" alt="Site logo" />
+      <div class="htitle">
+        <h1>The Blue Weather</h1>
+        <div class="subtitle">Always bring your own sunshine</div>
+      </div>
+    </header>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li>
+          <a href="index.html"
+            >&#127968; Home</a
+          >
+        </li>
+        <li>
+          <a href="preston.html"
+            >&#128084; Preston</a
+          >
+        </li>
+        <li>
+          <a href="sodasprings.html"
+            >&#9925; Soda Springs</a
+          >
+        </li>
+        <li>
+          <a href="fishhaven.html"
+            >&#x1F3A3; Fish Haven</a
+          >
+        </li>
+        <li>
+          <a
+            href="stormcenter.html"
+            class="active"
+            >&#127754; Storm Center</a
+          >
+        </li>
+        <li>
+          <a href="gallery.html"
+            >&#127748; Gallery</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Storm Center Form</h2>
+      <div class="fcontainer">
+        <form method="get" action="thanks.html">
+          <fieldset>
+            <legend>Contact information</legend>
+            <div class="row">
+              <div class="collabel">
+                <label for="name">Full name</label><label class="rred">*</label>
+              </div>
+
+              <div class="colelement">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  pattern="[A-z\s]{5,}"
+                  required
+                  placeholder="Your name"
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="collabel">
+                <label for="email">Email</label>
+              </div>
+              <div class="colelement">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="someone@tbw.com"
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="collabel">
+                <label for="phone">Phone Number</label>
+                <label class="rred">*</label>
+              </div>
+              <div class="colelement">
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  required
+                  placeholder="123-555-1234"
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="collabel">
+                <label for="zipcode">Zipcode </label>
+                <label class="rred">*</label>
+              </div>
+              <div class="colelement">
+                <input
+                  type="number"
+                  name="zipcode"
+                  id="zipcode"
+                  placeholder="00000"
+                  required
+                />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Storm information</legend>
+            <div class="row">
+              <div class="collabel">
+                <label for="sdate">Storm Date</label>
+              </div>
+              <div class="colelement">
+                <input type="date" id="sdate" name="theDate" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="collabel">
+                <label for="stype">Storm Type</label>
+              </div>
+              <div class="colelement">
+                <input
+                  list="storm-type-list"
+                  id="stype"
+                  name="stchoice"
+                />
+                <datalist id="storm-type-list">
+                  <option value="Flash Flood"> </option>
+                  <option value="Hail"> </option>
+                  <option value="Hurricane"> </option>
+                  <option value="Thunderstorm"> </option>
+                  <option value="Tornado"> </option>
+                </datalist>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="collabel">
+                <label class="flexly" for="rating"
+                  >Storm Severity (
+                  <span id="ratingvalue">5</span> )&nbsp;&nbsp;&nbsp;
+                </label>
+              </div>
+              <div class="colelement">
+                <input
+                  name="sseverity"
+                  type="range"
+                  id="rating"
+                  value="5"
+                  min="1"
+                  max="10"
+                  step="1"
+                  list="tickmarks"
+                  oninput="adjustRating(this.value)"
+                  onchange="adjustRating(this.value)"
+                />
+
+                <datalist id="tickmarks">
+                  <option value="0"> </option>
+                  <option value="1"> </option>
+                  <option value="2"> </option>
+                  <option value="3"> </option>
+                  <option value="4"> </option>
+                  <option value="5"> </option>
+                  <option value="6"> </option>
+                  <option value="7"> </option>
+                  <option value="8"> </option>
+                  <option value="9"> </option>
+                  <option value="10"> </option>
+                </datalist>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="collabel">
+                <label for="sregion">Storm Region</label>
+              </div>
+
+              <div class="colelement">
+                <select id="sregion" name="sregion">
+                  <option value="select" disabled selected
+                    >Select Region ...</option
+                  >
+                  <option value="preston">Preston</option>
+                  <option value="ssprings">Soda Springs</option>
+                  <option value="fhaven">Fish Haven</option>
+                </select>
+              </div>
+            </div>
+
+            <fieldset>
+              <legend>Danger Level</legend>
+              <div class="row">
+                <div class="collabel">
+                  <label>In danger</label>
+                </div>
+                <div class="colelement">
+                  <label for="yes" class="radio-inline">
+                    <input
+                      type="radio"
+                      id="yes"
+                      value="yes"
+                      name="optradio"
+                      checked
+                    />yes
+                  </label>
+                  <label for="maybe" class="radio-inline">
+                    <input
+                      type="radio"
+                      id="maybe"
+                      value="maybe"
+                      name="optradio"
+                    />maybe
+                  </label>
+                  <label for="no" class="radio-inline">
+                    <input type="radio" id="no" value="no" name="optradio" />no
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <div class="row">
+              <div class="collabel">
+                <label for="comments">Comments</label>
+              </div>
+              <div class="colelement">
+                <textarea
+                  name="information"
+                  id="comments"
+                  placeholder="Write something ..."
+                ></textarea>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="row">
+            <input type="submit" value="Send My Form" class="submitBtn" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      &copy; The Blue Weather | Weather
+      information provided by
+      <a class="wdate" href="http://OpenWeatherMap.org">OpenWeatherMap.org</a> | Alejandro G. Marin 
+      <br />
+      <a class="wdate"><span id="lastup"></span></a>
+      <script src="js/update.js"></script>
+    </footer>
+    <script src="js/toggleMenu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/form.js"></script>
+  </body>
+</html>

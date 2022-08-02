@@ -1,0 +1,123 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 75rem) {
+    /*Menu*/
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    nav ul {
+        justify-content: space-evenly;
+
+    }
+
+    nav ul il {
+        flex: 1 1 100%;
+    }
+
+    nav ul li a {
+        border: none;
+        padding: .6rem 1rem;
+    }
+
+    main picture {
+        display: block;
+    }
+
+    main picture img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #bbb;
+    }
+
+    /*END Menu*/
+    .box {
+        max-width: 320px;
+        float: right;
+        margin: 19px;
+    }
+
+    figure {
+        margin: 0;
+    }
+
+    /*Visible*/
+
+    .box2 {
+        display: block;
+    }
+
+    .contentbox1 {
+
+        max-width: fit-content;
+    }
+
+    /*END Visible*/
+
+    input[type=submit] {
+        align-items: center;
+        max-width: 8rem;
+    }
+
+    /*CARDS*/
+    .cards {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .teamname {
+        font-size: 28px;
+    }
+
+    .teaminfo {
+        font-size: 13px;
+    }
+
+    .teamsection {
+        display: block;
+        width: 95%;
+        margin: auto;
+        padding: 30px 30px;
+        margin-bottom: 20px;
+    }
+
+    .teamsection div {
+        height: 165px;
+    }
+
+    .teamphoto {
+        width: 100%;
+    }
+
+    /*END CARDS*/
+    article {
+        display: flex;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+
+    .takeme {
+        padding: 5px 210px;
+    }
+
+    .left {
+        width: 30%;
+    }
+
+    .data {
+        width: 50%;
+    }
+
+    article img {
+        width: 100%;
+        margin-top: 0px;
+    }
+}
+
+/*end large*/

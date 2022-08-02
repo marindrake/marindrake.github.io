@@ -1,0 +1,551 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Sansita", Ubuntu, sans-serif;
+    background: linear-gradient(0deg, beige, transparent);
+}
+
+footer {
+    background: green;
+    font-size: .85rem;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+header {
+    background: #2196F3;
+    color: sienna;
+    display: flex;
+    justify-content: center;
+}
+
+header,
+nav {
+    width: 100%;
+}
+
+main {
+    background-color: beige;
+    font-size: 0.8rem;
+    margin: 0px auto;
+}
+
+
+main picture {
+    display: none;
+    margin: 0.5rem;
+}
+
+main,
+footer {
+    max-width: 754px;
+    margin: 0 auto;
+}
+
+.htitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tlogo {
+    width: 100px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: "Shadows Into Light", Verdana, Geneva;
+    margin: 6.1px;
+}
+
+h2 {
+    color: #8C0A03;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    color: black;
+}
+
+h2,
+p {
+    margin-top: 0px;
+    margin-right: 7px;
+    margin-left: 7px;
+    margin-bottom: 7px;
+}
+
+p {
+    color: black;
+    font-size: .85rem;
+}
+
+/*Menu*/
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.25rem;
+    color: black;
+    width: 90%;
+}
+
+nav {
+    background-color: lavender;
+    font-family: "Sansita", Ubuntu, sans-serif;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    max-width: 902px;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 0.75rem;
+    font-size: 0.95rem;
+    font-family: "Sansita", Ubuntu, sans-serif;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+.active {
+    color: yellow;
+    background-color: darkblue;
+}
+
+nav ul li a:hover {
+    color: white;
+    background-color: black;
+
+}
+
+/*END Menu*/
+
+.wdate {
+    color: yellow;
+}
+
+.subtitle {
+    color: #48b9c2;
+    font-family: "Shadows Into Light", Verdana, Geneva;
+    padding-bottom: 10px;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+figure img[data-src] {
+    filter: blur(0.2em);
+}
+
+figure img {
+    border: 1px solid #333;
+    padding: 5px;
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+/*Overlay*/
+.dropbtn {
+    position: absolute;
+    background-color: green;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    top: -12px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    min-width: 209px;
+    display: none;
+    position: absolute;
+    background: radial-gradient(#eee, bisque);
+    border: 1px solid brown;
+    opacity: .8;
+    left: 83px;
+    top: -12px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content h2 {
+    border-bottom: solid;
+}
+
+/*END Overlay*/
+
+/*Content*/
+
+.contentbox1 {
+    max-width: 441px;
+    display: block;
+    margin: 10px auto;
+    padding: 15px;
+    color: #9B0B03;
+    font-family: "Acme", Ubuntu, sans-serif;
+    font-size: 1rem;
+}
+
+.contentbox2 {
+    max-width: 730px;
+    display: block;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: #9B0B03;
+    font-family: "Acme", Ubuntu, sans-serif;
+    font-size: 1rem;
+}
+
+.contentbox3 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 0px;
+    color: #9B0B03;
+    font-family: "Acme", Ubuntu, sans-serif;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+/*END Content*/
+
+.data {
+    display: block;
+    padding: 0 5px 5px;
+}
+
+.contentbox1 {
+    max-width: min-content;
+}
+
+.box {
+    margin: auto;
+    width: 65%;
+    border-radius: 5px;
+}
+
+.box2 {
+    display: none;
+    width: 400px;
+    height: 250px;
+    border-radius: 5px;
+    padding: .5em;
+}
+
+.wrapper2 {
+    text-align: center;
+    color: #fff;
+    display: flow-root;
+}
+
+.icon {
+    text-align: right;
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    margin: -2px;
+}
+
+main div.herodiv img {
+    margin-top: -14px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+textarea {
+    box-sizing: border-box;
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    height: 100px;
+}
+
+label {
+    color: black;
+    padding: 12px 12px 12px 0;
+    margin-left: 15px;
+}
+
+input[type=submit] {
+    background-color: brown;
+    color: white;
+    padding: .75rem 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    float: right;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+}
+
+input[type=submit]:hover {
+    background-color: #10333F;
+}
+
+.fcontainer {
+    border-radius: 5px;
+    font-family: "Acme", Ubuntu, sans-serif;
+    font-size: .85rem;
+}
+
+.collabel {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.colelement {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+    margin-left: 15px;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+fieldset {
+    background-color: seashell;
+    border: 1px solid #ccc;
+}
+
+.collabel,
+.colelement,
+input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+}
+
+input:focus {
+    box-shadow: 0 0 10px moccasin;
+}
+
+input:required {
+    color: #000;
+    border-left: red solid 6px;
+}
+
+input:required:valid {
+    border-left: green solid 6px;
+}
+
+input,
+select {
+    padding: 0.5rem;
+    margin-bottom: .35rem;
+    width: 200px;
+}
+
+form {
+    max-width: 300px;
+    margin: auto;
+}
+
+form fieldset {
+    margin: 1rem 0;
+    border: 1px solid #F36D21;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: brown;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-family: "Sansita", Ubuntu, sans-serif;
+    font-size: medium;
+}
+
+/* END Responsive Form*/
+
+/*CARDS*/
+.titletp {
+    font-size: 1.6rem;
+}
+
+.title5 {
+    color: red;
+}
+
+.teamname {
+    font-family: "Acme", Ubuntu, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    color: black;
+    font-weight: bold;
+}
+
+.teaminfo {
+    font-family: "Sansita", Ubuntu, sans-serif;
+    padding: 5px;
+    margin: 0;
+    color: brown;
+    font-weight: bold;
+}
+
+.teambio {
+    margin: 3px;
+    font-size: 12px;
+    padding: 3px;
+    margin: 3px;
+    font-size: 13px;
+    color: black;
+}
+
+.teamphoto {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+    margin-bottom: 15px;
+}
+
+.teamsection {
+    display: block;
+    margin: 10px;
+    padding-bottom: 10px;
+    background-color: seashell;
+    box-shadow: 5px 5px 10px #F36D21;
+    max-width: 100%;
+    padding: 30px;
+    border-radius: 15px;
+    border: 5px solid #F36D21;
+}
+
+.cards section:hover {
+    background-color: antiquewhite;
+}
+
+.cards {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+/*END CARDS*/
+
+article {
+    display: flow-root;
+    max-width: 800px;
+    margin: 1.1rem auto;
+    background-color: darkseagreen;
+
+}
+
+article img {
+    border: 6px solid black;
+    width: 90%;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: -2px;
+}
+
+.data {
+    padding: 10px;
+    margin: auto;
+}
+
+/*TABLE*/
+.contentbox1 td {
+    font-size: 15px;
+    text-align: center;
+    background: white;
+    color: black;
+}
+
+.contentbox1 th {
+    background: darkred;
+    color: beige;
+}
+
+.contentbox1 table,
+td,
+th {
+    padding: 10px;
+    border: 1px solid #F36D21;
+    border-collapse: collapse;
+}
+
+/*END Table*/
+
+/*No Visible*/
+
+.box2 {
+    display: none;
+    box-shadow: 5px 5px 0px #F36D21;
+}
+
+/*END No Visible*/
+
+.takeme {
+    border: 2px solid darkgreen;
+    color: black;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 3.5px 55px;
+}
+
+.takeme:hover {
+    border: 2px solid #8C0A03;
+    background-color: #F36D21;
+    color: whitesmoke;
+    transition: .5s;
+}
+
+.left {
+    float: left;
+}
+
+.wrapper3 {
+    text-align: center;
+    margin-top: -48px;
+    margin-bottom: 15px;
+}
