@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Wedding Planners - UTAH</title>
+  <meta name="description" content="Contact Page." />
+  <meta name="author" content="MARINDRAKE" />
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.png" class="logo" alt="Site logo" />
+    <div class="htitle">
+      <h1>Wedding Planners</h1>
+      <div class="subtitle">Utah</div>
+    </div>
+  </header>
+
+  <div class="topnav">
+    <a href="packages.html">Packages</a>
+    <a href="temples.html">Temples</a>
+    <a href="contact.html" class="active">Get started</a>
+    <a href="index.html" style="float:right">Home</a>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <h2>Message Vendor</h2>
+        <div id="feedback"></div>
+        <form action="/my-handling-form-page" method="post">
+          <ul>
+            <li>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="user_name" required />
+            </li>
+            <li>
+              <label for="mail">E-mail:</label>
+              <input type="text" id="mail" name="user_mail" required />
+            </li>
+            <li>
+              <label for="mail">Phone:</label>
+              <input type="text" id="phone" name="user_phone" required />
+            </li>
+            <li>
+              <label for="mail">Date:</label>
+              <input type="date" id="date" name="user_date" required />
+            </li>
+            <li>
+              <label for="msg">Message:</label>
+              <textarea id="msg" name="user_message"></textarea>
+            </li>
+            <li class="button">
+              <button type="submit">Send your message</button>
+            </li>
+          </ul>
+        </form>
+        <script>
+          // get the feedback div element so we can do something with it.
+          const feedbackElement = document.getElementById('feedback');
+          // get the form element so we can read what was entered in it.
+          const formElement = document.forms[0];
+
+          // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+          formElement.addEventListener('submit', function (e) {
+            // stop the form from doing the default action
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value +
+              '! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+          });
+        </script>
+ </div>
+</div>
+
+      </div>
+      <div class="card">
+        <div class="contentbox3">
+          <div class="wrapper2">
+            <img src="images/logo.png" class="logo" alt="Site logo" />
+            <p>
+              <p>Wedding Planners</p>
+            <p>  500 E Center St.<br />
+              Provo, Ut.
+            </p>
+            <p>801-555-1234</p>
+            <p>info@wgplanners.com</p>
+          </div>
+
+          <iframe class="box2" title="Riggins, Idaho MAP"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3045.892179265747!2d-111.65215788435513!3d40.23369947467408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d974c122cddb3%3A0x62bf07d3dccfd132!2s500%20E%20Center%20St%2C%20Provo%2C%20UT%2084606!5e0!3m2!1sen!2sus!4v1607242088305!5m2!1sen!2sus"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""
+            aria-hidden="false" tabindex="0"></iframe>
+        </div>
+
+      </div>
+
+      <footer>
+        Alejandro Garcia Marin | BYU-Idaho | WDD 130 - Web Fundamentals
+        <a class="wdate" href="https://lexmarenator.github.io/final-site-plan.html">Site plan</a>
+        <br />
+        <a class="wdate"><span id="lastup"></span></a>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+      <script src="js/webfontload.js"></script>
+</body>
+
+</html>

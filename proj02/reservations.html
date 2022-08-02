@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inn & Suites | Your Home Away From Home | 215-529-9999</title>
+    <meta name="description" content="The Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD." />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <img class="logo" src="images/templinnicon.png" alt="Temple Inn & Suites Logo">
+        </picture>
+        <section class="headings">
+            <h1>Temple Inn & Suites</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">&#127968; Home</a></li>
+                    <li><a href="amenities.html">Amenities</a></li>
+                    <li><a href="temple.html">Temple Spotlight</a></li>
+                    <li><a href="reservations.html" class="active">Reservations</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <div class="banner-box hero">
+            <img class="banner" src="images/hero.jpg" alt="Hero Temple Img">
+        </div>
+
+        <div id="feedback"></div>
+        <div class="wrapper2">
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name" required />
+                    </li>
+                    <li>
+                        <label for="mail">E-mail:</label>
+                        <input type="email" id="mail" name="user_mail" required />
+                    </li>
+                    <li>
+                        <label for="number">Mobile Number:</label>
+                        <input type="text" id="number" name="user_mobile" required />
+                    </li>
+                    <li>
+                        <label for="room">Room Type</label>
+                        <select id="room" name="room_type">
+                            <option value="select" disabled selected>Select your room</option>
+                            <option value="resort">Resort Room</option>
+                            <option value="deluxe">Deluxe Room</option>
+                            <option value="two">Two Bedroom</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="arrival">Arrival Date</label>
+                        <input type="date" id="arrival" name="arrival_date" />
+                    </li>
+                    <li>
+                        <label for="departure">Departure Date</label>
+                        <input type="date" id="departure" name="departure_date" />
+                    </li>
+                    <li>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Complete your reservation</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <div class="info">
+                <p> &#128205; Temple Inn & Suites Headquarters<br>
+                    355 Wisconsin Avenue<br>
+                    Bethesda, MD 20814<br>
+                    &#128222; 215-829-9999<br>
+                    &#128231; info@templinn.com<br>
+                </p>
+            </div>
+
+            <div class="social">
+                <a href="https://en-gb.facebook.com" target="_blank" rel="noopener">
+                    <img class="icon" src="images/facebook.png" alt="Facebook icon">
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener">
+                    <img class="icon" src="images/twitter.png" alt="Twitter icon">
+                </a>
+                <a href="https://www.pinterest.com" target="_blank" rel="noopener">
+                    <img class="icon" src="images/pinterest.png" alt="Pinterest icon">
+                </a>
+            </div>
+        </div>
+        <div class="copyright"> Copyright &copy; 2020 Temple Inn & Suites | All Rights Reserved | Privacy and Cookie
+            Statement | Alejandro Garcia Marin
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+</body>
+
+</html>

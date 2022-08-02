@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.wrapper2 {
+    padding: 40px;
+}
+
+body {
+    background-color: lightgray;
+    font-family: "Sansita", Ubuntu, sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headings {
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    color: white;
+}
+
+.logo {
+    width: 75px;
+    border: 0;
+    padding: 10px;
+}
+
+header,
+main,
+footer {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+main {
+    background-color: white;
+}
+
+header,
+footer {
+    background: darkslateblue;
+}
+
+nav li {
+    padding-left: 100px;
+    display: inline-block;
+    padding: 10px;
+    margin: 2px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.active {
+    color: yellow;
+}
+
+nav ul li a:hover {
+    background-color: lavender;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+.sec1,
+.sec2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.sec2 {
+    display: flex;
+}
+
+.sec3 {
+    text-align: center;
+    grid-column: 1 / 3;
+    padding: 10px;
+}
+
+.leftcol,
+.rightcol {
+    max-width: 85%;
+    flex: 1 0 15em;
+    margin: 2.3em;
+}
+
+.icon {
+    height: 60px;
+    margin-left: 13px;
+    margin-top: 23px;
+}
+
+h2 {
+    text-decoration-line: underline;
+}
+
+.footer-info {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.info {
+    text-align: right;
+}
+
+.social {
+    text-align: center;
+}
+
+.copyright {
+    font-size: 13.5px;
+    text-align: center;
+    padding: 15px;
+}
+
+.banner-box {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.banner-box img {
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+
+.takeme {
+    line-height: 2em;
+    font-size: 1.2em;
+    border: 2px solid black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    padding: 3.5px 15px;
+    padding-bottom: 10px;
+}
+
+.takeme:hover {
+    border: 2px solid navy;
+    background-color: darkslateblue;
+    color: whitesmoke;
+    transition: .5s;
+}
+
+.action {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: rgba(240, 240, 240, 0.8);
+    margin: 2em 20em;
+    padding: 1em;
+    text-align: center;
+}
+
+.home-left-img,
+.home-right-img {
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 5px 5px 5px #999;
+    max-width: 100%;
+}
+
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 500px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    background-color: lavender;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li+li {
+    margin-top: 1em;
+}
+
+label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+}
+
+input,
+textarea {
+    /* To make sure that all text fields have the same font settings
+By default, textareas have a monospace font */
+    font: 1em sans-serif;
+
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+
+    /* Match form field borders */
+    border: 1px solid #999;
+}
+
+input:required {
+    border-left: red solid 6px;
+}
+
+input:required:valid {
+    border-left: green solid 6px;
+}
+
+input:focus,
+textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+}
+
+textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+
+    /* Provide space to type some text */
+    height: 5em;
+}
+
+.button {
+    /* Align buttons with the text fields */
+    padding-left: 90px;
+    /* same size as the label elements */
+}
+
+button {
+    /* This extra margin represent roughly the same space as the space
+between the labels and their text fields */
+    margin-left: 2.5em;
+}
+
+#feedback {
+    /* add styling and layout properties of your own design here as needed */
+    padding-top: 20px;
+    text-align: center;
+    display: none;
+    color: black;
+    /* we will make the element invisible until the form is submitted successfully */
+}
+
+@media screen and (max-width: 550px) {
+    .wrapper {
+        display: block;
+    }
+
+    .action {
+        padding: 0;
+        margin: 0;
+    }
+
+}
