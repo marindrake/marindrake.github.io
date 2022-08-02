@@ -1,0 +1,234 @@
+/*Example1*/
+.wrap {
+  margin: 50px;
+}
+
+.container {
+  display: inline-block;
+  width: 300px;
+}
+
+.container2 {
+  display: inline-block;
+  width: 150px;
+}
+
+h3 {
+  color: lightgray;
+  font-family: lato;
+  font-size: 20px;
+  font-weight: 200;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.box {
+  border-radius: 5px;
+  height: 40px;
+  margin: 50px auto;
+  width: 80px;
+}
+.wrap:hover .box {
+  transform: scale(2);
+}
+
+.box1 {
+  background: mediumturquoise;
+}
+
+.box2 {
+  background: #2b3f53;
+  transition: all 1s;
+}
+
+/*Example2*/
+.boxt {
+  border-radius: 50%;
+  height: 40px;
+  margin: 50px auto;
+  width: 40px;
+}
+.wrap:hover .boxt {
+  transform: scale(2);
+}
+
+.box1t {
+  background: #60D4C8;
+  transition: all 300ms;
+}
+
+.box2t {
+  background: #46BAAF;
+  transition: all 1s;
+}
+
+.box3t {
+  background: #3EA69B;
+  transition: all 3s;
+}
+
+/*Example3*/
+.container3 {
+  margin: 100px;
+}
+
+.circle, .circle5, .circle4, .circle3, .circle2, .circle1, .circle0 {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+}
+.container3:hover .circle, .container3:hover .circle5, .container3:hover .circle4, .container3:hover .circle3, .container3:hover .circle2, .container3:hover .circle1, .container3:hover .circle0 {
+  transform: translateX(200px);
+}
+
+.circle0 {
+  background: PaleTurquoise;
+  transition: all 1.5s linear;
+}
+
+.circle1 {
+  background: salmon;
+  transition: all 1.5s ease;
+}
+
+.circle2 {
+  background: lightskyblue;
+  transition: all 1.5s ease-in;
+}
+
+.circle3 {
+  background: khaki;
+  transition: all 1.5s ease-out;
+}
+
+.circle4 {
+  background: mediumturquoise;
+  transition: all 1.5s ease-in-out;
+}
+
+.circle5 {
+  background: thistle;
+  transition: all 1.5s cubic-bezier(0, 1, 0.98, 0);
+}
+
+/*Example4*/
+.container4 {
+  margin: 100px;
+}
+
+.boxd {
+  background: steelblue;
+  border-radius: 5px;
+  display: inline-block;
+  height: 80px;
+  margin: 20px;
+  width: 80px;
+}
+.container4:hover .boxd {
+  transform: scale(1.4);
+}
+
+.box1d {
+  transition: all 1.3s;
+}
+
+.box2d {
+  transition: all 1.3s 0.5s;
+}
+
+.box3d {
+  transition: all 1.3s 1s;
+}
+
+/*Example5*/
+.square {
+  background: darkturquoise;
+  border-radius: 5px;
+  height: 100px;
+  margin: 100px;
+  transition: transform 1s;
+  width: 100px;
+}
+.square:hover {
+  transform: scale(2);
+}
+
+/*Example6*/
+.droplet {
+  background: mediumaquamarine;
+  border-radius: 2% 50%;
+  height: 100px;
+  margin: 100px;
+  transition: all 3s;
+  transition-timing: ease-in-out;
+  width: 100px;
+}
+.droplet:hover {
+  transform: rotate(1080deg);
+}
+
+/*Example7*/
+.square1 {
+  background: #00aa9d;
+  border-radius: 3px;
+  height: 150px;
+  margin: 25px;
+  position: absolute;
+  transition: transform 0.8s;
+  width: 150px;
+}
+
+.square2 {
+  background: #2b3f53;
+  border-radius: 3px;
+  height: 150px;
+  margin: 25px;
+  transition: transform 0.8s;
+  position: absolute;
+  width: 150px;
+}
+.square2:hover {
+  transform: translate(20px, 20px);
+}
+
+/*Example8*/
+.square3 {
+  background: Khaki;
+  border-radius: 5px;
+  height: 150px;
+  margin: 100px;
+  transition: transform 1s;
+  width: 150px;
+}
+.square3:hover {
+  transform: skewX(-20deg);
+}
+
+/*Example9*/
+.droplet2 {
+  background: skyblue;
+  border-radius: 5px 50%;
+  height: 100px;
+  margin: 150px auto;
+  transform-origin: left top;
+  transition: transform 3s;
+  width: 100px;
+}
+.droplet2:hover {
+  transform: rotate(500deg);
+}
+
+/*Example10*/
+.square4 {
+  background: salmon;
+  border-radius: 5px;
+  height: 75px;
+  margin: 100px;
+  transition: transform 1s;
+  width: 75px;
+}
+.square4:hover {
+  transform: rotate(90deg) scale(1.75) translateX(50px);
+}

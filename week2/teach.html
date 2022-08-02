@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="MARINDRAKE" />
+        <link rel="stylesheet" href="/css/style.css" />
+    <title>W02 - Team Activity</title>
+
+    <script>
+        function displayToDiv() {
+            let value = document.getElementById('input1').value;
+            let output = document.getElementById('firstgroup');
+            output.innerHTML = "Value: " + value;
+        }
+
+        function doCountValues(value) {
+            let sum = 0;
+            for (let cnt = 1; cnt <= value; cnt++) {
+                sum += cnt;
+            }
+            return sum;
+        }
+
+        function countValues(number) {
+            //            let value = parseInt(document.getElementById('input2').value);
+            let output = document.getElementById('secondgroup');
+            if (number != NaN) {
+                output.innerHTML = 'Sum: ' + doCountValues(number);
+            }
+
+        }
+
+        function addAllTogther(a, b, c) {
+            let total = parseInt(a) + parseInt(b) + parseInt(c);
+            let output = document.getElementById('thirdgroup');
+            output.innerHTML = 'Total: ' + total;
+        }
+
+        const multiply = (number1, number2) => number1 * number2;
+
+        function doMultiply(number1, number2) {
+            let output = document.getElementById('stretch1');
+            output.innerHTML = multiply(number1, number2);
+        }
+
+        function doSubtract(number1, number2) {
+            let output = document.getElementById('stretch1');
+            console.log('here');
+            output.innerHTML = number1 - number2;
+        }
+
+        function calc(callback) {
+            let value1 = document.getElementById('input1').value;
+            let value2 = document.getElementById('input2').value;
+
+            result = callback(value1, value2);
+            let output = document.getElementById('stretch1');
+            output.innerHTML = result;
+        }
+
+        function doDivide(a, b) {
+            return a / b;
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <h1>First</h1>
+    <input id="input1" type="text">
+    <button id="button1" onclick="displayToDiv()">Go!</button>
+    <div id="firstgroup"></div>
+
+    <h1>Second</h1>
+    <input id="input2" type="text">
+    <button id="button2" onclick="countValues(parseInt(document.getElementById('input2').value))">Go! #2</button>
+    <div id="secondgroup"></div>
+
+    <h1>Third</h1>
+    <input id="input3" type="text">
+    <button id="button3"
+        onclick="addAllTogther(document.getElementById('input1').value, document.getElementById('input2').value, document.getElementById('input3').value)">+</button>
+    <div id="thirdgroup"></div>
+
+    <h1>Stretch 1</h1>
+
+    <button id="button4"
+        onclick="doMultiply(document.getElementById('input1').value, document.getElementById('input2').value)">*</button>
+    <button id="button5"
+        onclick="doSubtract(document.getElementById('input1').value, document.getElementById('input2').value)">-</button>
+    <button id="button6" onclick="calc(doDivide)">/</button>
+    <div id="stretch1"></div>
+
+
+</body>
+
+</html>

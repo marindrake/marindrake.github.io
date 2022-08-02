@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Love Calculator</title>
+        <meta name="author" content="MARINDRAKE"/>
+        <meta name="description" content="The Love Calculator you can calculate the probability of a successful relationship between two people.">
+        <link rel="stylesheet" href="/project/css/style.css">
+        <link rel="shortcut icon" href="/project/images/favicon.png">
+    </head>
+    <body class="container">
+        <header>
+            <img class="logo" src="/project/images/logo.png" alt="My logo">
+            <div class="htitle">
+                <h1>Love Calculator</h1>
+            </div>
+        </header>
+
+        <div class="info">
+            <p>We all know that a name can tell a lot about a person. Names are not randomly chosen: they all have a meaning.</p>
+            <p>Sometimes you'd like to know if a relationship with someone could work out. With the Love Calculator you can calculate the probability of a successful relationship between two people.</p>
+
+            <p>To find out what the chances for you and your dream partner are, just fill in both names in the two text boxes below, and press Calculate.</p>
+        </div>
+
+        <form name="myForm" class="main-input">
+            <h2>Your name</h2>
+            <input id="fn" type="text" name="yourname" size="25" autofocus placeholder="Enter your name" required="required">
+
+            <h2>Your crush</h2>
+            <input id="sn" type="text" name="yourcrush" size="25" placeholder="Enter your crush name" required="required">
+            <button class="calculate" onclick="calculate()">Calculate</button>
+            <button class="calculate" onclick="clearForm(this.form);" value="Clear">Try again</button>
+
+            <!-- Animated heart with Heartbeat Sound -->
+            <div class="container2">
+                <div class="heart">
+                    <audio>
+                        <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/heartbeat.mp3">
+                    </audio>
+
+                    <span id="percentage"></span>
+                    <div class="right-heart"></div>
+                    <div class="left-heart"></div>
+               </div>
+                <div class="text-percentage">
+                    <span>
+                        percentage
+                    </span>
+                </div>
+            </div>
+            <!-- Animated heart with Heartbeat Sound -->
+        </form>
+
+        <!-- Progress Bar -->
+        <div id="myProgress">
+            <div id="myBar"></div>
+        </div>
+        <!-- Progress Bar -->
+
+<!-- Here I show the results -->
+<div class="main-result">
+    <span id="main-result-block" class="main-result-block invisible"></span>
+        <img id="happy" class="result_image invisible" src="/project/images/happy.gif" alt="Congratulations! Good choice">
+        <img id="neutral" class="result_image invisible" src="/project/images/neutral.gif" alt="All the best!">
+        <img id="nope" class="result_image invisible" src="/project/images/nope.gif" alt="Can choose someone better.">
+    <div>
+        <span id="result"></span>
+    </div>
+</div>
+<!-- Here I show the results -->
+
+<footer>
+    <p class="footer-info">&copy; 2021 | Alejandro G. Marin | Information About the Love Calculator</p>
+    <p>The love test calculates the chances that your love will succeed as a percentage. Find our your chances! But remember, everything is unexpected when it comes to love and we cannot guarantee success, but often persistence is rewarded! Everyone can improve the odds of a relationship with their own behaviour!</p>
+</footer>
+<script src="/project/js/main.js"></script>
+</body>
+</html>

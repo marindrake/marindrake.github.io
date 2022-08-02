@@ -1,0 +1,126 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+    <div>Current Player: <span id="currentPlayer"></span></div><br>
+    <table>
+        <tr>
+            <td td="sq0" data-cell-index="0"></td>
+            <td id="sq1" data-cell-index="1"></td>
+            <td id="sq2" data-cell-index="2"></td>
+        </tr>
+        <tr>
+            <td id="sq3" data-cell-index="3"></td>
+            <td id="sq4" data-cell-index="4"></td>
+            <td id="sq5" data-cell-index="5"></td>
+        </tr>
+        <tr>
+            <td id="sq6" data-cell-index="6"></td>
+            <td id="sq7" data-cell-index="7"></td>
+            <td id="sq8" data-cell-index="8"></td>
+        </tr>
+    </table>
+    <button type="button">Reset</button>
+    <div id="boardArray"></div>
+    <script>
+        let board; // tracking of selected squares
+        let player = true;
+        let mark;
+        let gameOver = false;
+        let currentPlayer = document.querySelector("#currentPlayer"); //.innerHTML = player;
+        const cells = document.querySelectorAll('td');
+
+        // these are the patterns to compare for a win
+        const patterns = [
+            [0, 1, 2], // 1st row complete
+            [3, 4, 5], // 2nd row complete
+            [6, 7, 8], // 3rd row complete
+            [0, 3, 6], // 1st column complete
+            [1, 4, 7], // 2nd column complete
+            [2, 5, 8], // 3rd column complete
+            [0, 4, 8], // diagonal left to right
+            [2, 4, 6] // diagonal right to left
+        ];
+
+        function clearBoard() {
+            board = ["", "", "", "", "", "", "", "", ""];
+            for (let cnt = 0; cnt < cells.length; cnt++) {
+                cells[cnt].innerHTML = "";
+            };
+        }
+
+        function displayCurrentPlayer() {
+            if (player) {
+                mark = "X";
+            } else {
+                mark = "O";
+            }
+            currentPlayer.innerHTML = mark; // update square with mark
+        }
+
+        function squareClick(cell) {
+            if (cell.innerHTML != "" || gameOver) return;
+            //let selectedCell = parseInt(cell.getAttribute('data-cell-index'));
+            cell.innerHTML = mark;
+            board[parseInt(cell.getAttribute('data-cell-index'))] = mark; // update our tracking board
+
+            if (checkForWin()) {
+                currentPlayer.innerHTML = mark + " Wins";
+            } else {
+                player = !player;
+                displayCurrentPlayer();
+            }
+        }
+
+        function reset() {
+            player = true; // reset to first player (X)
+            gameOver = false;
+            clearBoard();
+            displayCurrentPlayer();
+        }
+
+        function checkForWin() {
+
+            // debug board
+            // document.querySelector("#boardArray").innerHTML = board.toString();
+
+            // iterate through patterns checking if answered squares match
+            for (cnt = 0; cnt <= 7; cnt++) {
+                let sq1 = board[patterns[cnt][0]];
+                let sq2 = board[patterns[cnt][1]];
+                let sq3 = board[patterns[cnt][2]];
+
+                // check to see if not all squares are selected.. if so move to next
+                if (sq1 == "" || sq2 == "" || sq3 == "") {
+                    continue;
+                } // all squares are filled.. check to see if they are matched
+                else if (sq1 == sq2 && sq2 == sq3) {
+                    gameOver = true;
+                    return true; // we got a match!!
+                }
+
+            }
+            return false; // no match
+        }
+
+        clearBoard();
+        displayCurrentPlayer();
+
+        // iterate throw all td's and assign an event (td is the parameter) 
+        for (let cnt = 0; cnt < cells.length; cnt++) {
+            cells[cnt].addEventListener('click', () => {
+                squareClick(cells[cnt]);
+            });
+        };
+
+        // assign reset button
+        document.querySelector("button").addEventListener("click", reset);
+    </script>
+</body>
+
+</html>
