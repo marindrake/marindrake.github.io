@@ -5,9 +5,10 @@ const links = [
   { label: 'Salmon River Adventures', url: 'proj04/index.html', },
   { label: 'The Blue Weather', url: 'proj05/index.html', },
   { label: 'CSS Zen Garden', url: 'proj06/index.html', },
-  { label: 'Comic Book', url: 'proj07/comic.pdf', },
-  { label: 'Composite Photography', url: 'proj07/composite.pdf', },
-  { label: 'Magazine Spread', url: 'proj07/magazine.pdf', },
+  { label: 'Comic Book (Adobe Illustrator)', url: 'proj07/comic.pdf', },
+  { label: 'Composite Photography (Adobe Photoshop)', url: 'proj07/composite.pdf', },
+  { label: 'Magazine Spread (Adobe InDesign)', url: 'proj07/magazine.pdf', },
+  { label: 'Résumé', url: 'proj07/resume.pdf', },
   ];
 
   var list = document.getElementsByTagName('ol');
