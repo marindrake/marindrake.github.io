@@ -1,5 +1,7 @@
 const links = [
-  { label: 'Love Calculator', url: 'proj01/index.html', }, // you can add other tags if you like
+  { label: 'Résumé', url: 'proj07/resume.pdf', },
+  { label: 'Unofficial Transcript - BYUI', url: 'proj07/transcript.pdf', },
+  { label: 'Love Calculator', url: 'proj01/index.html', },
   { label: 'Temple Inn & Suites', url: 'proj02/index.html', },
   { label: 'Wedding Planners', url: 'proj03/index.html', },
   { label: 'Salmon River Adventures', url: 'proj04/index.html', },
@@ -9,8 +11,6 @@ const links = [
   { label: 'Composite Photography (Adobe Photoshop)', url: 'proj07/composite.pdf', },
   { label: 'Magazine Spread (Adobe InDesign)', url: 'proj07/magazine.pdf', },
   { label: 'Would you go with me? (Adobe Premiere Pro)', url: 'https://youtu.be/7AcfkYTqt9A', },
-  { label: 'Résumé', url: 'proj07/resume.pdf', },
-  { label: 'Unofficial Transcript - BYUI', url: 'proj07/transcript.pdf', },
   ];
 
   var list = document.getElementsByTagName('ol');
