@@ -8,6 +8,7 @@ const links = [
   { label: 'The Blue Weather', url: 'proj05/index.html', },
   { label: 'CSS Zen Garden', url: 'proj06/index.html', },
   { label: 'Comic Book (Adobe Illustrator)', url: 'proj07/comic.pdf', },
+  { label: 'Posters Project (Adobe Illustrator)', url: 'proj07/posters.pdf', },
   { label: 'Composite Photography (Adobe Photoshop)', url: 'proj07/composite.pdf', },
   { label: 'Magazine Spread (Adobe InDesign)', url: 'proj07/magazine.pdf', },
   { label: 'Would you go with me? (Adobe Premiere Pro)', url: 'https://youtu.be/7AcfkYTqt9A', },
