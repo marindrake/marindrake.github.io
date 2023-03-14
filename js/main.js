@@ -7,10 +7,15 @@ const links = [
   { label: 'Salmon River Adventures', url: 'proj04/index.html', },
   { label: 'The Blue Weather', url: 'proj05/index.html', },
   { label: 'CSS Zen Garden', url: 'proj06/index.html', },
+  { label: 'Magazine Spread (Adobe InDesign)', url: 'proj07/magazine.pdf', },
   { label: 'Comic Book (Adobe Illustrator)', url: 'proj07/comic.pdf', },
   { label: 'Posters Project (Adobe Illustrator)', url: 'proj07/posters.pdf', },
+  { label: 'Glyphs Project (Adobe Illustrator)', url: 'https://www.behance.net/gallery/161830989/Glyphs-Project', },
+  { label: 'Business Card (Adobe Illustrator)', url: 'https://www.behance.net/gallery/163524745/Business-Card', },
+  { label: 'Type Poster (Adobe Illustrator)', url: 'https://www.behance.net/gallery/164820655/Type-Poster', },
   { label: 'Composite Photography (Adobe Photoshop)', url: 'proj07/composite.pdf', },
-  { label: 'Magazine Spread (Adobe InDesign)', url: 'proj07/magazine.pdf', },
+  { label: 'Conceptual Book Cover (Adobe Photoshop)', url: 'https://www.behance.net/gallery/164610481/Conceptual-Book-Cover', },
+  { label: 'Seven Creative Strategies (Adobe Photoshop)', url: 'https://www.behance.net/gallery/161888147/Project-01Creative-Strategies', },
   { label: 'Would you go with me? (Adobe Premiere Pro)', url: 'https://youtu.be/7AcfkYTqt9A', },
   ];
 
