@@ -18,7 +18,7 @@ const links = [
   { label: 'Composite Photography (Adobe Photoshop)', url: 'proj07/composite.pdf', },
   { label: 'Conceptual Book Cover (Adobe Photoshop)', url: 'https://www.behance.net/gallery/164610481/Conceptual-Book-Cover', },
   { label: 'Seven Creative Strategies (Adobe Photoshop)', url: 'https://www.behance.net/gallery/161888147/Project-01Creative-Strategies', },
-  { label: 'Would you go with me? (Adobe Premiere Pro)', url: 'https://youtu.be/7AcfkYTqt9A', },
+  { label: 'Would you go with me? (Adobe Premiere Pro)', url: 'https://youtu.be/7AcfkYTqt9A', }
   ];
 
   var list = document.getElementsByTagName('ol');
